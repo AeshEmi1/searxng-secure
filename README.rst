@@ -2,9 +2,9 @@
 
 ----
 
-.. figure:: https://raw.githubusercontent.com/searxng/searxng/master/src/brand/searxng.svg
-   :target: https://docs.searxng.org/
-   :alt: SearXNG
+.. figure:: https://raw.githubusercontent.com/AeshEmi1/searxng/master/src/brand/searxng_secure.svg
+   :target: https://aeshemi1.github.io/searxng-secure/
+   :alt: SearXNG Secure
    :width: 100%
    :align: center
 
@@ -18,14 +18,14 @@ The pool of SearXNG and SearXNG secure users is much smaller than those of more 
 
 A user_, admin_ and developer_ handbook is available on the homepage_.
 
-|SearXNG install|
-|SearXNG homepage|
-|SearXNG wiki|
+|SearXNG Secure install|
+|SearXNG Secure homepage|
+|SearXNG Secure wiki|
 |AGPL License|
 |Issues|
 |commits|
 |weblate|
-|SearXNG logo|
+|SearXNG Secure logo|
 
 ----
 
@@ -35,17 +35,17 @@ A user_, admin_ and developer_ handbook is available on the homepage_.
 .. _homepage: https://aeshemi1.github.io/searxng-secure/
 .. _metasearch engine: https://en.wikipedia.org/wiki/Metasearch_engine
 
-.. |SearXNG logo| image:: https://raw.githubusercontent.com/searxng/searxng/master/src/brand/searxng-wordmark.svg
-   :target: https://docs.searxng.org/
+.. |SearXNG Secure logo| image:: https://raw.githubusercontent.com/AeshEmi1/searxng/master/src/brand/searxng_secure.svg
+   :target: https://aeshemi1.github.io/
    :width: 5%
 
-.. |SearXNG install| image:: https://img.shields.io/badge/-install-blue
+.. |SearXNG Secure install| image:: https://img.shields.io/badge/-install-blue
    :target: https://docs.searxng.org/admin/installation.html
 
-.. |SearXNG homepage| image:: https://img.shields.io/badge/-homepage-blue
+.. |SearXNG Secure homepage| image:: https://img.shields.io/badge/-homepage-blue
    :target: https://docs.searxng.org/
 
-.. |SearXNG wiki| image:: https://img.shields.io/badge/-wiki-blue
+.. |SearXNG Secure wiki| image:: https://img.shields.io/badge/-wiki-blue
    :target: https://github.com/searxng/searxng/wiki
 
 .. |AGPL License|  image:: https://img.shields.io/badge/license-AGPL-blue.svg
