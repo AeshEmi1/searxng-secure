@@ -2,7 +2,7 @@
 
 ----
 
-.. figure:: https://raw.githubusercontent.com/AeshEmi1/searxng/master/src/brand/searxng_secure.svg
+.. figure:: https://raw.githubusercontent.com/AeshEmi1/searxng/master/src/brand/SearXNG_Secure_logo.png
    :target: https://aeshemi1.github.io/searxng-secure/
    :alt: SearXNG Secure
    :width: 100%
@@ -35,30 +35,30 @@ A user_, admin_ and developer_ handbook is available on the homepage_.
 .. _homepage: https://aeshemi1.github.io/searxng-secure/
 .. _metasearch engine: https://en.wikipedia.org/wiki/Metasearch_engine
 
-.. |SearXNG Secure logo| image:: https://raw.githubusercontent.com/AeshEmi1/searxng/master/src/brand/searxng_secure.svg
-   :target: https://aeshemi1.github.io/
+.. |SearXNG Secure logo| image:: https://raw.githubusercontent.com/AeshEmi1/searxng/master/src/brand/SearXNG_Secure_logo.png
+   :target: https://aeshemi1.github.io/searxng/
    :width: 5%
 
 .. |SearXNG Secure install| image:: https://img.shields.io/badge/-install-blue
-   :target: https://docs.searxng.org/admin/installation.html
+   :target: https://aeshemi1.github.io/searxng-secure/admin/installation.html
 
 .. |SearXNG Secure homepage| image:: https://img.shields.io/badge/-homepage-blue
-   :target: https://docs.searxng.org/
+   :target: https://aeshemi1.github.io/searxng-secure/
 
 .. |SearXNG Secure wiki| image:: https://img.shields.io/badge/-wiki-blue
-   :target: https://github.com/searxng/searxng/wiki
+   :target: https://github.com/AeshEmi1/searxng-secure/wiki
 
 .. |AGPL License|  image:: https://img.shields.io/badge/license-AGPL-blue.svg
-   :target: https://github.com/searxng/searxng/blob/master/LICENSE
+   :target: https://github.com/AeshEmi1/searxng-secure/blob/master/LICENSE
 
 .. |Issues| image:: https://img.shields.io/github/issues/searxng/searxng?color=yellow&label=issues
-   :target: https://github.com/searxng/searxng/issues
+   :target: https://github.com/AeshEmi1/searxng-secure/issues
 
 .. |PR| image:: https://img.shields.io/github/issues-pr-raw/searxng/searxng?color=yellow&label=PR
-   :target: https://github.com/searxng/searxng/pulls
+   :target: https://github.com/AeshEmi1/searxng-secure/pulls
 
 .. |commits| image:: https://img.shields.io/github/commit-activity/y/searxng/searxng?color=yellow&label=commits
-   :target: https://github.com/searxng/searxng/commits/master
+   :target: https://github.com/AeshEmi1/searxng-secure/commits/master
 
 .. |weblate| image:: https://translate.codeberg.org/widgets/searxng/-/searxng/svg-badge.svg
    :target: https://translate.codeberg.org/projects/searxng/
