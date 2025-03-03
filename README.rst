@@ -2,9 +2,9 @@
 
 ----
 
-.. figure:: https://raw.githubusercontent.com/AeshEmi1/searxng/master/src/brand/SearXNG_Secure_logo.png
-   :target: https://aeshemi1.github.io/searxng-secure/
-   :alt: SearXNG Secure
+.. figure:: https://raw.githubusercontent.com/AeshEmi1/searxng-se/master/src/brand/SearXNG-SE_logo.png
+   :target: https://aeshemi1.github.io/searxng-se/
+   :alt: SearXNG-SE
    :width: 100%
    :align: center
 
@@ -13,52 +13,47 @@
 
 An actual privacy-respecting, hackable `metasearch engine`_
 
-I highly suggest AGAINST using public SearXNG or SearXNG secure instances. It is impossible to know if they are collecting logs, or even worse inspecting your web searches in cleartext.
-The pool of SearXNG and SearXNG secure users is much smaller than those of more mainstream search engines, thus making individual users much easier to track on public instances.
+It is NOT advised to use public SearXNG or SearXNG-SE instances. It is impossible to know if they are collecting logs, inspecting your web searches in cleartext, or selling your data.
 
 A user_, admin_ and developer_ handbook is available on the homepage_.
 
-|SearXNG Secure install|
-|SearXNG Secure homepage|
-|SearXNG Secure wiki|
+|SearXNG-SE install|
+|SearXNG-SE homepage|
+|SearXNG-SE wiki|
 |AGPL License|
 |Issues|
 |commits|
 |weblate|
-|SearXNG Secure logo|
+|SearXNG-SE small logo|
 
 ----
 
-.. _user: https://aeshemi1.github.io/searxng-secure/user/
-.. _admin: https://aeshemi1.github.io/searxng-secure/admin
-.. _developer: https://aeshemi1.github.io/searxng-secure/dev
-.. _homepage: https://aeshemi1.github.io/searxng-secure/
+.. _user: https://aeshemi1.github.io/searxng-se/user/
+.. _admin: https://aeshemi1.github.io/searxng-se/admin
+.. _developer: https://aeshemi1.github.io/searxng-se/dev
+.. _homepage: https://aeshemi1.github.io/searxng-se/
 .. _metasearch engine: https://en.wikipedia.org/wiki/Metasearch_engine
 
-.. |SearXNG Secure logo| image:: https://raw.githubusercontent.com/AeshEmi1/searxng/master/src/brand/SearXNG_Secure_logo.png
-   :target: https://aeshemi1.github.io/searxng/
-   :width: 5%
+.. |SearXNG-SE install| image:: https://img.shields.io/badge/-install-red
+   :target: https://aeshemi1.github.io/searxng-se/admin/installation.html
 
-.. |SearXNG Secure install| image:: https://img.shields.io/badge/-install-blue
-   :target: https://aeshemi1.github.io/searxng-secure/admin/installation.html
+.. |SearXNG-SE homepage| image:: https://img.shields.io/badge/-homepage-red
+   :target: https://aeshemi1.github.io/searxng-se/
 
-.. |SearXNG Secure homepage| image:: https://img.shields.io/badge/-homepage-blue
-   :target: https://aeshemi1.github.io/searxng-secure/
+.. |SearXNG-SE wiki| image:: https://img.shields.io/badge/-wiki-red
+   :target: https://github.com/AeshEmi1/searxng-se/wiki
 
-.. |SearXNG Secure wiki| image:: https://img.shields.io/badge/-wiki-blue
-   :target: https://github.com/AeshEmi1/searxng-secure/wiki
+.. |AGPL License|  image:: https://img.shields.io/badge/license-AGPL-red.svg
+   :target: https://github.com/AeshEmi1/searxng-se/blob/master/LICENSE
 
-.. |AGPL License|  image:: https://img.shields.io/badge/license-AGPL-blue.svg
-   :target: https://github.com/AeshEmi1/searxng-secure/blob/master/LICENSE
+.. |Issues| image:: https://img.shields.io/github/issues/AeshEmi1/searxng-se?color=yellow&label=issues
+   :target: https://github.com/AeshEmi1/searxng-se/issues
 
-.. |Issues| image:: https://img.shields.io/github/issues/searxng/searxng?color=yellow&label=issues
-   :target: https://github.com/AeshEmi1/searxng-secure/issues
+.. |PR| image:: https://img.shields.io/github/issues-pr-raw/AeshEmi1/searxng-se?color=yellow&label=PR
+   :target: https://github.com/AeshEmi1/searxng-se/pulls
 
-.. |PR| image:: https://img.shields.io/github/issues-pr-raw/searxng/searxng?color=yellow&label=PR
-   :target: https://github.com/AeshEmi1/searxng-secure/pulls
-
-.. |commits| image:: https://img.shields.io/github/commit-activity/y/searxng/searxng?color=yellow&label=commits
-   :target: https://github.com/AeshEmi1/searxng-secure/commits/master
+.. |commits| image:: https://img.shields.io/github/commit-activity/y/AeshEmi1/searxng-se?color=yellow&label=commits
+   :target: https://github.com/AeshEmi1/searxng-se/commits/master
 
 .. |weblate| image:: https://translate.codeberg.org/widgets/searxng/-/searxng/svg-badge.svg
    :target: https://translate.codeberg.org/projects/searxng/
@@ -67,7 +62,7 @@ A user_, admin_ and developer_ handbook is available on the homepage_.
 Contact
 =======
 
-Open a discussion to ask questions or chat with the SearXNG Secure community!
+Open a discussion to ask questions or chat with the SearXNG-SE community!
 
 Setup
 =====
@@ -78,17 +73,17 @@ Setup
 - For individual setup consult our detailed `Step by step`_ instructions.
 - To fine-tune your instance, take a look at the `Administrator documentation`_.
 
-.. _Administrator documentation: https://aeshemi1.github.io/searxng-secure/admin/index.html
-.. _Step by step: https://aeshemi1.github.io/searxng-secure/admin/installation-searxng.html
-.. _installation scripts: https://aeshemi1.github.io/searxng-secure/admin/installation-scripts.html
-.. _Docker image: https://github.com/AeshEmi1/searxng-docker
+.. _Administrator documentation: https://aeshemi1.github.io/searxng-se/admin/index.html
+.. _Step by step: https://aeshemi1.github.io/searxng-se/admin/installation-searxng.html
+.. _installation scripts: https://aeshemi1.github.io/searxng-se/admin/installation-scripts.html
+.. _Docker image: https://github.com/AeshEmi1/searxng-se-docker
 
 Translations
 ============
 
 .. _Weblate: https://translate.codeberg.org/projects/searxng/searxng/
 
-Help translate SearXNG at `Weblate`_
+This is not maintained by us, but translations to SearXNG help our project as well. Help translate SearXNG at `Weblate`_
 
 .. figure:: https://translate.codeberg.org/widgets/searxng/-/multi-auto.svg
    :target: https://translate.codeberg.org/projects/searxng/
@@ -97,8 +92,8 @@ Help translate SearXNG at `Weblate`_
 Contributing
 ============
 
-.. _development quickstart: https://aeshemi1.github.io/searxng-secure/dev/quickstart.html
-.. _developer documentation: https://aeshemi1.github.io/searxng-secure/dev/index.html
+.. _development quickstart: https://aeshemi1.github.io/searxng-se/dev/quickstart.html
+.. _developer documentation: https://aeshemi1.github.io/searxng-se/dev/index.html
 
 Are you a developer?  Have a look at our `development quickstart`_ guide, it's
 very easy to contribute.  Additionally we have a `developer documentation`_.
