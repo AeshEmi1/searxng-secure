@@ -10,9 +10,11 @@
 
 ----
 
-Privacy-respecting, hackable `metasearch engine`_
 
-Searx.space_ lists ready-to-use running instances.
+An actual privacy-respecting, hackable `metasearch engine`_
+
+I highly suggest AGAINST using public SearXNG or SearXNG secure instances. It is impossible to know if they are collecting logs, or even worse inspecting your web searches in cleartext.
+The pool of SearXNG and SearXNG secure users is much smaller than those of more mainstream search engines, thus making individual users much easier to track on public instances.
 
 A user_, admin_ and developer_ handbook is available on the homepage_.
 
@@ -27,11 +29,10 @@ A user_, admin_ and developer_ handbook is available on the homepage_.
 
 ----
 
-.. _searx.space: https://searx.space
-.. _user: https://docs.searxng.org/user
-.. _admin: https://docs.searxng.org/admin
-.. _developer: https://docs.searxng.org/dev
-.. _homepage: https://docs.searxng.org/
+.. _user: https://aeshemi1.github.io/searxng-secure/user/
+.. _admin: https://aeshemi1.github.io/searxng-secure/admin
+.. _developer: https://aeshemi1.github.io/searxng-secure/dev
+.. _homepage: https://aeshemi1.github.io/searxng-secure/
 .. _metasearch engine: https://en.wikipedia.org/wiki/Metasearch_engine
 
 .. |SearXNG logo| image:: https://raw.githubusercontent.com/searxng/searxng/master/src/brand/searxng-wordmark.svg
@@ -66,15 +67,7 @@ A user_, admin_ and developer_ handbook is available on the homepage_.
 Contact
 =======
 
-Ask questions or chat with the SearXNG community (this not a chatbot) on
-
-IRC
-  `#searxng on libera.chat <https://web.libera.chat/?channel=#searxng>`_
-  which is bridged to Matrix.
-
-Matrix
-  `#searxng:matrix.org <https://matrix.to/#/#searxng:matrix.org>`_
-
+Open a discussion to ask questions or chat with the SearXNG Secure community!
 
 Setup
 =====
@@ -85,10 +78,10 @@ Setup
 - For individual setup consult our detailed `Step by step`_ instructions.
 - To fine-tune your instance, take a look at the `Administrator documentation`_.
 
-.. _Administrator documentation: https://docs.searxng.org/admin/index.html
-.. _Step by step: https://docs.searxng.org/admin/installation-searxng.html
-.. _installation scripts: https://docs.searxng.org/admin/installation-scripts.html
-.. _Docker image: https://github.com/searxng/searxng-docker
+.. _Administrator documentation: https://aeshemi1.github.io/searxng-secure/admin/index.html
+.. _Step by step: https://aeshemi1.github.io/searxng-secure/admin/installation-searxng.html
+.. _installation scripts: https://aeshemi1.github.io/searxng-secure/admin/installation-scripts.html
+.. _Docker image: https://github.com/AeshEmi1/searxng-docker
 
 Translations
 ============
@@ -104,8 +97,8 @@ Help translate SearXNG at `Weblate`_
 Contributing
 ============
 
-.. _development quickstart: https://docs.searxng.org/dev/quickstart.html
-.. _developer documentation: https://docs.searxng.org/dev/index.html
+.. _development quickstart: https://aeshemi1.github.io/searxng-secure/dev/quickstart.html
+.. _developer documentation: https://aeshemi1.github.io/searxng-secure/dev/index.html
 
 Are you a developer?  Have a look at our `development quickstart`_ guide, it's
 very easy to contribute.  Additionally we have a `developer documentation`_.
