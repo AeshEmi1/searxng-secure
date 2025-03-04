@@ -169,7 +169,7 @@ ${fedora_build}
        # disable debug
        $ sudo -H sed -i -e \"s/debug : True/debug : False/g\" \"$SEARXNG_SETTINGS_PATH\"
 
-Open WEB browser and visit http://$SEARXNG_INTERNAL_HTTP .  If you are inside a
+Open WEB browser and visit https://$SEARXNG_INTERNAL_HTTP .  If you are inside a
 container or in a script, test with curl:
 
 .. tabs::
@@ -178,7 +178,7 @@ container or in a script, test with curl:
 
     .. code-block:: sh
 
-       $ xdg-open http://$SEARXNG_INTERNAL_HTTP
+       $ xdg-open https://$SEARXNG_INTERNAL_HTTP
 
   .. group-tab:: curl
 

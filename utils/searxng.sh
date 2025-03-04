@@ -25,7 +25,7 @@ SEARXNG_PYENV="${SERVICE_HOME}/searx-pyenv"
 SEARXNG_SETTINGS_PATH="/etc/searxng/settings.yml"
 SEARXNG_UWSGI_APP="searxng.ini"
 
-SEARXNG_INTERNAL_HTTP="${SEARXNG_BIND_ADDRESS}:${SEARXNG_PORT}"
+SEARXNG_INTERNAL_HTTPS="${SEARXNG_BIND_ADDRESS}:${SEARXNG_PORT}"
 if [[ ${SEARXNG_UWSGI_USE_SOCKET} == true ]]; then
     SEARXNG_UWSGI_SOCKET="${SERVICE_HOME}/run/socket"
 else
@@ -151,7 +151,7 @@ searxng.instance.env() {
     if [[ ${SEARXNG_UWSGI_USE_SOCKET} == true ]]; then
         echo "  SEARXNG_UWSGI_SOCKET : ${SEARXNG_UWSGI_SOCKET}"
     else
-        echo "  SEARXNG_INTERNAL_HTTP: ${SEARXNG_INTERNAL_HTTP}"
+        echo "  SEARXNG_INTERNAL_HTTPD: ${SEARXNG_INTERNAL_HTTPD}"
     fi
     cat <<EOF
 environment:
@@ -601,10 +601,10 @@ searxng.install.uwsgi() {
 }
 
 searxng.install.uwsgi.http() {
-    rst_para "Install ${SEARXNG_UWSGI_APP} at: http://${SEARXNG_INTERNAL_HTTP}"
+    rst_para "Install ${SEARXNG_UWSGI_APP} at: https://${SEARXNG_INTERNAL_HTTPS}"
     uWSGI_install_app "${SEARXNG_UWSGI_APP}"
     if ! searxng.uwsgi.available; then
-        err_msg "URL http://${SEARXNG_INTERNAL_HTTP} not available, check SearXNG & uwsgi setup!"
+        err_msg "URL https://${SEARXNG_INTERNAL_HTTPS} not available, check SearXNG & uwsgi setup!"
     fi
 }
 
@@ -639,7 +639,7 @@ searxng.uwsgi.available() {
             info_msg "uWSGI socket is located at: ${SEARXNG_UWSGI_SOCKET}"
         fi
     else
-        service_is_available "http://${SEARXNG_INTERNAL_HTTP}"
+        service_is_available "http://${SEARXNG_INTERNAL_HTTPS}"
         exit_val=$?
     fi
     return "$exit_val"
@@ -669,8 +669,8 @@ searxng.instance.localtest() {
     rst_para "Activate debug mode, start a minimal SearXNG "\
              "service and debug a HTTP request/response cycle."
 
-    if service_is_available "http://${SEARXNG_INTERNAL_HTTP}" &>/dev/null; then
-        err_msg "URL/port http://${SEARXNG_INTERNAL_HTTP} is already in use, you"
+    if service_is_available "https://${SEARXNG_INTERNAL_HTTPS}" &>/dev/null; then
+        err_msg "URL/port https://${SEARXNG_INTERNAL_HTTPS} is already in use, you"
         err_msg "should stop that service before starting local tests!"
         if ! ask_yn "Continue with local tests?"; then
             return
@@ -683,7 +683,7 @@ export SEARXNG_SETTINGS_PATH="${SEARXNG_SETTINGS_PATH}"
 cd ${SEARXNG_SRC}
 timeout 10 python searx/webapp.py &
 sleep 3
-curl --location --verbose --head --insecure ${SEARXNG_INTERNAL_HTTP}
+curl --location --verbose --head --insecure ${SEARXNG_INTERNAL_HTTPS}
 EOF
     echo
     searxng.instance.debug.off
