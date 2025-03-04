@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Limiter &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>Limiter &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <script src="../_static/documentation_options.js?v=537f2c43"></script>
@@ -32,7 +32,7 @@
         <li class="right" >
           <a href="searx.favicons.html" title="Favicons"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Administrator documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Limiter</a></li> 
       </ul>
@@ -59,10 +59,10 @@
 </nav>
 <p id="module-searx.limiter">Bot protection / IP rate limitation.  The intention of rate limitation is to
 limit suspicious requests from an IP.  The motivation behind this is the fact
-that SearXNG passes through requests from bots and is thus classified as a bot
-itself.  As a result, the SearXNG engine then receives a CAPTCHA or is blocked
+that SearXNG-SE passes through requests from bots and is thus classified as a bot
+itself.  As a result, the SearXNG-SE engine then receives a CAPTCHA or is blocked
 by the search engine (the origin) in some other way.</p>
-<p>To avoid blocking, the requests from bots to SearXNG must also be blocked, this
+<p>To avoid blocking, the requests from bots to SearXNG-SE must also be blocked, this
 is the task of the limiter.  To perform this task, the limiter uses the methods
 from the <a class="reference internal" href="../src/searx.botdetection.html#botdetection"><span class="std std-ref">Bot Detection</span></a>:</p>
 <ul class="simple">
@@ -159,7 +159,7 @@ the <a class="reference internal" href="../src/searx.botdetection.html#botdetect
   <span class="c1"># &#39;fe80::/10&#39;            # IPv6 linklocal / wins over botdetection.ip_limit.filter_link_local</span>
 <span class="p">]</span>
 
-<span class="c1"># Activate passlist of (hardcoded) IPs from the SearXNG organization,</span>
+<span class="c1"># Activate passlist of (hardcoded) IPs from the SearXNG-SE organization,</span>
 <span class="c1"># e.g. `check.searx.space`.</span>
 <span class="n">pass_searxng_org</span> <span class="o">=</span> <span class="n">true</span>
 </pre></div>
@@ -222,7 +222,7 @@ the <a class="reference internal" href="../src/searx.botdetection.html#botdetect
 <li class="toctree-l2"><a class="reference internal" href="installation-uwsgi.html">uWSGI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation-nginx.html">NGINX</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation-apache.html">Apache</a></li>
-<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG maintenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG-SE maintenance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="answer-captcha.html">Answer CAPTCHA from server’s IP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.favicons.html">Favicons</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Limiter</a><ul>
@@ -290,7 +290,7 @@ the <a class="reference internal" href="../src/searx.botdetection.html#botdetect
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

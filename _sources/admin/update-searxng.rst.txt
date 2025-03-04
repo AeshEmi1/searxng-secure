@@ -1,7 +1,7 @@
 .. _searxng maintenance:
 
 ===================
-SearXNG maintenance
+SearXNG-SE maintenance
 ===================
 
 .. sidebar:: further read
@@ -51,8 +51,8 @@ Migrate and stay tuned!
    - :pull:`456`
    - :pull:`A comment about rolling release <446#issuecomment-954730358>`
 
-SearXNG is a *rolling release*; each commit to the master branch is a release.
-SearXNG is growing rapidly, the services and opportunities are change every now
+SearXNG-SE is a *rolling release*; each commit to the master branch is a release.
+SearXNG-SE is growing rapidly, the services and opportunities are change every now
 and then, to name just a few:
 
 - Bot protection has been switched from filtron to SearXNG's :ref:`limiter
@@ -66,14 +66,14 @@ and then, to name just a few:
   setup`.
 
 To stay tuned and get in use of the new features, instance maintainers have to
-update the SearXNG code regularly (see :ref:`update searxng`).  As the above
+update the SearXNG-SE code regularly (see :ref:`update searxng`).  As the above
 examples show, this is not always enough, sometimes services have to be set up
 or reconfigured and sometimes services that are no longer needed should be
 uninstalled.
 
 .. hint::
 
-   First of all: SearXNG is installed by the script :ref:`searxng.sh`.  If you
+   First of all: SearXNG-SE is installed by the script :ref:`searxng.sh`.  If you
    have old filtron, morty or searx setup you should consider complete
    uninstall/reinstall.
 
@@ -121,13 +121,13 @@ nginx::
 Check after Installation
 ------------------------
 
-Once you have done your installation, you can run a SearXNG *check* procedure,
+Once you have done your installation, you can run a SearXNG-SE *check* procedure,
 to see if there are some left overs.  In this example there exists a *old*
 ``/etc/searx/settings.yml``::
 
    $ sudo -H ./utils/searxng.sh instance check
 
-   SearXNG checks
+   SearXNG-SE checks
    --------------
    ERROR: settings.yml in /etc/searx/ is deprecated, move file to folder /etc/searxng/
    INFO:  [OK] (old) account 'searx' does not exists

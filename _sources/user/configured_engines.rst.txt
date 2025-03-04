@@ -13,7 +13,7 @@ Configured Engines
 
 .. jinja:: searx
 
-   SearXNG supports {{engines | length}} search engines of which
+   SearXNG-SE supports {{engines | length}} search engines of which
    {{enabled_engine_count}} are enabled by default.
 
    Engines can be assigned to multiple :ref:`categories <engine categories>`.

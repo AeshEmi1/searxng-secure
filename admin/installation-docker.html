@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Docker Container &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>Docker Container &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <script src="../_static/documentation_options.js?v=537f2c43"></script>
@@ -32,7 +32,7 @@
         <li class="right" >
           <a href="installation.html" title="Installation"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Administrator documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Docker Container</a></li> 
       </ul>
@@ -74,7 +74,7 @@ maintain their own Docker images.</p>
 <li><p>a HTTPS reverse proxy <a class="reference external" href="https://hub.docker.com/_/caddy">[caddy]</a> and</p></li>
 <li><p>a <a class="reference external" href="https://redis.io/">Redis</a> DB</p></li>
 </ul>
-<p>The <a class="reference external" href="https://github.com/searxng/searxng-docker/blob/master/searxng/settings.yml">default SearXNG setup</a>
+<p>The <a class="reference external" href="https://github.com/searxng/searxng-docker/blob/master/searxng/settings.yml">default SearXNG-SE setup</a>
 of this container:</p>
 <ul class="simple">
 <li><p>enables <a class="reference internal" href="searx.limiter.html#limiter"><span class="std std-ref">limiter</span></a> to protect against bots</p></li>
@@ -178,7 +178,7 @@ Compared to debian, in the Alpine image <a class="extlink-man reference external
 </section>
 <section id="build-the-image">
 <h2>Build the image<a class="headerlink" href="#build-the-image" title="Link to this heading">¶</a></h2>
-<p>It’s also possible to build SearXNG from the embedded <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/Dockerfile">git://Dockerfile</a>:</p>
+<p>It’s also possible to build SearXNG-SE from the embedded <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/Dockerfile">git://Dockerfile</a>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/searxng/searxng.git
 $ cd searxng
 $ make docker.build
@@ -265,7 +265,7 @@ Volume:
 <li class="toctree-l2"><a class="reference internal" href="installation-uwsgi.html">uWSGI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation-nginx.html">NGINX</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation-apache.html">Apache</a></li>
-<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG maintenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG-SE maintenance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="answer-captcha.html">Answer CAPTCHA from server’s IP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.favicons.html">Favicons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.limiter.html">Limiter</a></li>
@@ -323,7 +323,7 @@ Volume:
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

@@ -1,7 +1,7 @@
 .. _searx.exceptions:
 
 ==================
-SearXNG Exceptions
+SearXNG-SE Exceptions
 ==================
 
 .. automodule:: searx.exceptions

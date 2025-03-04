@@ -12,7 +12,7 @@
 <g id="clust1" class="cluster">
 <title>cluster_searxng</title>
 <polygon fill="#fafafa" stroke="black" points="8,-8 8,-316 527,-316 527,-8 8,-8"/>
-<text text-anchor="middle" x="267.5" y="-300.8" font-family="Sans" font-size="14.00">SearXNG instance</text>
+<text text-anchor="middle" x="267.5" y="-300.8" font-family="Sans" font-size="14.00">SearXNG-SE instance</text>
 </g>
 <!-- browser -->
 <g id="node1" class="node">
@@ -70,7 +70,7 @@
 <g id="node6" class="node">
 <title>searxng1</title>
 <polygon fill="#ffffcc" stroke="black" points="120,-125 16,-125 16,-89 120,-89 120,-125"/>
-<text text-anchor="middle" x="68" y="-103.3" font-family="Sans" font-size="14.00" fill="#0000cd">SearXNG #1</text>
+<text text-anchor="middle" x="68" y="-103.3" font-family="Sans" font-size="14.00" fill="#0000cd">SearXNG-SE #1</text>
 </g>
 <!-- uwsgi&#45;&gt;searxng1 -->
 <g id="edge4" class="edge">
@@ -82,7 +82,7 @@
 <g id="node7" class="node">
 <title>searxng2</title>
 <polygon fill="#ffffcc" stroke="black" points="242,-125 138,-125 138,-89 242,-89 242,-125"/>
-<text text-anchor="middle" x="190" y="-103.3" font-family="Sans" font-size="14.00" fill="#0000cd">SearXNG #2</text>
+<text text-anchor="middle" x="190" y="-103.3" font-family="Sans" font-size="14.00" fill="#0000cd">SearXNG-SE #2</text>
 </g>
 <!-- uwsgi&#45;&gt;searxng2 -->
 <g id="edge6" class="edge">
@@ -94,7 +94,7 @@
 <g id="node8" class="node">
 <title>searxng3</title>
 <polygon fill="#ffffcc" stroke="black" points="364,-125 260,-125 260,-89 364,-89 364,-125"/>
-<text text-anchor="middle" x="312" y="-103.3" font-family="Sans" font-size="14.00" fill="#0000cd">SearXNG #3</text>
+<text text-anchor="middle" x="312" y="-103.3" font-family="Sans" font-size="14.00" fill="#0000cd">SearXNG-SE #3</text>
 </g>
 <!-- uwsgi&#45;&gt;searxng3 -->
 <g id="edge8" class="edge">
@@ -106,7 +106,7 @@
 <g id="node9" class="node">
 <title>searxng4</title>
 <polygon fill="#ffffcc" stroke="black" points="486,-125 382,-125 382,-89 486,-89 486,-125"/>
-<text text-anchor="middle" x="434" y="-103.3" font-family="Sans" font-size="14.00" fill="#0000cd">SearXNG #4</text>
+<text text-anchor="middle" x="434" y="-103.3" font-family="Sans" font-size="14.00" fill="#0000cd">SearXNG-SE #4</text>
 </g>
 <!-- uwsgi&#45;&gt;searxng4 -->
 <g id="edge10" class="edge">

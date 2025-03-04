@@ -6,7 +6,7 @@ List of plugins
 
 .. sidebar:: Further reading ..
 
-   - :ref:`SearXNG settings <settings plugins>`
+   - :ref:`SearXNG-SE settings <settings plugins>`
    - :ref:`dev plugin`
    - :ref:`builtin plugins`
 

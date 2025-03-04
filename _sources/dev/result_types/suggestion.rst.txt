@@ -35,4 +35,4 @@ title : :py:class:`str`
   Suggested search term
 
 url : :py:class:`str`
-  Not really an URL, its the value to insert in a HTML form for a SearXNG query.
+  Not really an URL, its the value to insert in a HTML form for a SearXNG-SE query.

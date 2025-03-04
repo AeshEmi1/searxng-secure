@@ -5,7 +5,7 @@
 ``utils/searxng.sh``
 ====================
 
-To simplify the installation and maintenance of a SearXNG instance you can use the
+To simplify the installation and maintenance of a SearXNG-SE instance you can use the
 script :origin:`utils/searxng.sh`.
 
 .. sidebar:: further reading
@@ -24,7 +24,7 @@ script :origin:`utils/searxng.sh`.
 Install
 =======
 
-In most cases you will install SearXNG simply by running the command:
+In most cases you will install SearXNG-SE simply by running the command:
 
 .. code::  bash
 

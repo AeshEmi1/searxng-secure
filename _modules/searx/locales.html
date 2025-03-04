@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>searx.locales &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>searx.locales &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../../_static/searxng.css?v=52e4ff28" />
     <script src="../../_static/documentation_options.js?v=537f2c43"></script>
@@ -24,7 +24,7 @@
         <li class="right" >
           <a href="../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">searx.locales</a></li> 
       </ul>
@@ -105,7 +105,7 @@
     <span class="s2">&quot;szl&quot;</span><span class="p">:</span> <span class="s2">&quot;Ślōnski (Silesian)&quot;</span><span class="p">,</span>
     <span class="s2">&quot;pap&quot;</span><span class="p">:</span> <span class="s2">&quot;Papiamento&quot;</span><span class="p">,</span>
 <span class="p">}</span>
-<span class="sd">&quot;&quot;&quot;Additional languages SearXNG has translations for but not supported by</span>
+<span class="sd">&quot;&quot;&quot;Additional languages SearXNG-SE has translations for but not supported by</span>
 <span class="sd">python-babel (see :py:obj:`locales_initialize`).&quot;&quot;&quot;</span>
 
 <span class="n">LOCALE_BEST_MATCH</span> <span class="o">=</span> <span class="p">{</span>
@@ -186,7 +186,7 @@
 <div class="viewcode-block" id="locales_initialize">
 <a class="viewcode-back" href="../../src/searx.locales.html#searx.locales.locales_initialize">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">locales_initialize</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize locales environment of the SearXNG session.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Initialize locales environment of the SearXNG-SE session.</span>
 
 <span class="sd">    - monkey patch :py:obj:`flask_babel.get_translations` by :py:obj:`get_translations`</span>
 <span class="sd">    - init global names :py:obj:`LOCALE_NAMES`, :py:obj:`RTL_LOCALES`</span>
@@ -280,11 +280,11 @@
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Return engine&#39;s language (aka locale) string that best fits to argument</span>
 <span class="sd">    ``searxng_locale``.</span>
 
-<span class="sd">    Argument ``engine_locales`` is a python dict that maps *SearXNG locales* to</span>
+<span class="sd">    Argument ``engine_locales`` is a python dict that maps *SearXNG-SE locales* to</span>
 <span class="sd">    corresponding *engine locales*::</span>
 
 <span class="sd">      &lt;engine&gt;: {</span>
-<span class="sd">          # SearXNG string : engine-string</span>
+<span class="sd">          # SearXNG-SE string : engine-string</span>
 <span class="sd">          &#39;ca-ES&#39;          : &#39;ca_ES&#39;,</span>
 <span class="sd">          &#39;fr-BE&#39;          : &#39;fr_BE&#39;,</span>
 <span class="sd">          &#39;fr-CA&#39;          : &#39;fr_CA&#39;,</span>
@@ -301,7 +301,7 @@
 
 <span class="sd">    .. hint::</span>
 
-<span class="sd">       The *SearXNG locale* string has to be known by babel!</span>
+<span class="sd">       The *SearXNG-SE locale* string has to be known by babel!</span>
 
 <span class="sd">    If there is no direct 1:1 mapping, this functions tries to narrow down</span>
 <span class="sd">    engine&#39;s language (locale).  If no value can be determined by these</span>
@@ -445,7 +445,7 @@
 
 <span class="sd">    .. hint::</span>
 
-<span class="sd">       The *SearXNG locale* string and the members of ``locale_tag_list`` has to</span>
+<span class="sd">       The *SearXNG-SE locale* string and the members of ``locale_tag_list`` has to</span>
 <span class="sd">       be known by babel!  The :py:obj:`ADDITIONAL_TRANSLATIONS` are used in the</span>
 <span class="sd">       UI and are not known by babel --&gt; will be ignored.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -460,7 +460,7 @@
     <span class="k">if</span> <span class="n">locale</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">fallback</span>
 
-    <span class="c1"># normalize to a SearXNG locale that can be passed to get_engine_locale</span>
+    <span class="c1"># normalize to a SearXNG-SE locale that can be passed to get_engine_locale</span>
 
     <span class="n">searxng_locale</span> <span class="o">=</span> <span class="n">language_tag</span><span class="p">(</span><span class="n">locale</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">locale</span><span class="o">.</span><span class="n">territory</span><span class="p">:</span>
@@ -507,9 +507,9 @@
 <span class="sd">    This function is a good example to understand the language/region model</span>
 <span class="sd">    of SearXNG:</span>
 
-<span class="sd">      SearXNG only distinguishes between **search languages** and **search</span>
+<span class="sd">      SearXNG-SE only distinguishes between **search languages** and **search</span>
 <span class="sd">      regions**, by adding the *script-tags*, languages with *script-tags* can</span>
-<span class="sd">      be assigned to the **regions** that SearXNG supports.</span>
+<span class="sd">      be assigned to the **regions** that SearXNG-SE supports.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">engine_locales</span> <span class="o">=</span> <span class="p">{}</span>
@@ -589,7 +589,7 @@
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

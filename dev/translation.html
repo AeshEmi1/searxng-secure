@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Translation &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>Translation &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <script src="../_static/documentation_options.js?v=537f2c43"></script>
@@ -32,7 +32,7 @@
         <li class="right" >
           <a href="answerers/statistics.html" title="Statistics"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Developer documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Translation</a></li> 
       </ul>
@@ -50,8 +50,8 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="../src/searx.babel_extract.html#searx-babel-extract"><span class="std std-ref">Custom message extractor (i18n)</span></a></p></li>
 <li><p><a class="reference external" href="https://docs.weblate.org">Weblate</a></p></li>
-<li><p>SearXNG <a class="reference external" href="https://github.com/searxng/searxng/tree/translations">translations branch</a></p></li>
-<li><p>SearXNG <a class="reference external" href="https://translate.codeberg.org/projects/searxng/searxng/#repository">Weblate repository</a></p></li>
+<li><p>SearXNG-SE <a class="reference external" href="https://github.com/searxng/searxng/tree/translations">translations branch</a></p></li>
+<li><p>SearXNG-SE <a class="reference external" href="https://translate.codeberg.org/projects/searxng/searxng/#repository">Weblate repository</a></p></li>
 <li><p>Weblate Client: <a class="reference external" href="https://docs.weblate.org/en/latest/wlc.html">wlc</a></p></li>
 <li><p>Babel Command-Line: <a class="reference external" href="http://babel.pocoo.org/en/latest/cmdline.html">pybabel</a></p></li>
 <li><p><a class="reference external" href="https://docs.weblate.org/en/latest/workflows.html">weblate workflow</a></p></li>
@@ -59,11 +59,11 @@
 </aside>
 <p>Translation takes place on <a class="reference external" href="https://translate.codeberg.org/projects/searxng/">translate.codeberg.org</a>.</p>
 <p>Translations which has been added by translators on the <a class="reference external" href="https://translate.codeberg.org/projects/searxng/">translate.codeberg.org</a> UI are
-committed to Weblate’s counterpart of the SearXNG <em>origin</em> repository which is
+committed to Weblate’s counterpart of the SearXNG-SE <em>origin</em> repository which is
 located at <code class="docutils literal notranslate"><span class="pre">https://translate.codeberg.org/git/searxng/searxng</span></code>.</p>
 <p>There is no need to clone this repository, <a class="reference internal" href="#searxng-weblate-workflow"><span class="std std-ref">SearXNG’s PR workflow to be in sync with Weblate</span></a> take
 care of the synchronization with the <em>origin</em>.  To avoid merging commits from
-the counterpart directly on the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of <em>SearXNG origin</em>, a <em>pull
+the counterpart directly on the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of <em>SearXNG-SE origin</em>, a <em>pull
 request</em> (PR) is created by this workflow.</p>
 <p>Weblate monitors the <a class="reference external" href="https://github.com/searxng/searxng/tree/translations">translations branch</a>, not the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch.  This
 branch is an <a class="reference external" href="https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt---orphanltnewbranchgt">orphan branch</a>, decoupled from the master branch (we already know
@@ -80,7 +80,7 @@ only the</p>
 </figcaption>
 </figure>
 <dl class="simple">
-<dt>Sync from <em>origin</em> to <em>weblate</em>: using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">weblate.push.translations</span></code></dt><dd><p>For each commit on the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of SearXNG <em>origin</em> the GitHub job
+<dt>Sync from <em>origin</em> to <em>weblate</em>: using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">weblate.push.translations</span></code></dt><dd><p>For each commit on the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of SearXNG-SE <em>origin</em> the GitHub job
 <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/.github/workflows/integration.yml">babel / Update translations branch</a> checks for updated translations.</p>
 </dd>
 <dt>Sync from <em>weblate</em> to <em>origin</em>: using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">weblate.translations.commit</span></code></dt><dd><p>Every Friday, the GitHub workflow <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/.github/workflows/translations-update.yml">babel / create PR for additions from
@@ -193,7 +193,7 @@ copy this content into <a class="reference external" href="https://docs.weblate.
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

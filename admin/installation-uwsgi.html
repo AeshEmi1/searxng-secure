@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>uWSGI &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>uWSGI &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
@@ -34,7 +34,7 @@
         <li class="right" >
           <a href="installation-searxng.html" title="Step by step installation"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Administrator documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">uWSGI</a></li> 
       </ul>
@@ -86,7 +86,7 @@ ini file</a> per uWSGI-app placed at dedicated locations.  Take archlinux and a
         <span class="n">links</span> <span class="n">to</span><span class="p">:</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">/</span><span class="n">apps</span><span class="o">-</span><span class="n">available</span><span class="o">/</span><span class="n">searxng</span><span class="o">.</span><span class="n">ini</span>
 </pre></div>
 </div>
-<p>The SearXNG app (template <code class="docutils literal notranslate"><span class="pre">/etc/uwsgi/%I.ini</span></code>) can be maintained as known
+<p>The SearXNG-SE app (template <code class="docutils literal notranslate"><span class="pre">/etc/uwsgi/%I.ini</span></code>) can be maintained as known
 from common systemd units:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w">  </span>uwsgi@searxng
 $<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w">   </span>uwsgi@searxng
@@ -245,7 +245,7 @@ default:</p>
 <span class="c1"># chdir to specified directory before apps loading</span>
 <span class="nv">chdir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>/usr/local/searxng/searxng-src/searx
 
-<span class="c1"># SearXNG configuration (settings.yml)</span>
+<span class="c1"># SearXNG-SE configuration (settings.yml)</span>
 <span class="nv">env</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">SEARXNG_SETTINGS_PATH</span><span class="o">=</span>/etc/searxng/settings.yml
 
 <span class="c1"># disable logging for privacy</span>
@@ -330,7 +330,7 @@ offload-threads<span class="w"> </span><span class="o">=</span><span class="w"> 
 <span class="c1"># chdir to specified directory before apps loading</span>
 <span class="nv">chdir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>/usr/local/searxng/searxng-src/searx
 
-<span class="c1"># SearXNG configuration (settings.yml)</span>
+<span class="c1"># SearXNG-SE configuration (settings.yml)</span>
 <span class="nv">env</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">SEARXNG_SETTINGS_PATH</span><span class="o">=</span>/etc/searxng/settings.yml
 
 <span class="c1"># disable logging for privacy</span>
@@ -420,7 +420,7 @@ offload-threads<span class="w"> </span><span class="o">=</span><span class="w"> 
 <span class="c1"># chdir to specified directory before apps loading</span>
 <span class="nv">chdir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>/usr/local/searxng/searxng-src/searx
 
-<span class="c1"># SearXNG configuration (settings.yml)</span>
+<span class="c1"># SearXNG-SE configuration (settings.yml)</span>
 <span class="nv">env</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">SEARXNG_SETTINGS_PATH</span><span class="o">=</span>/etc/searxng/settings.yml
 
 <span class="c1"># disable logging for privacy</span>
@@ -504,7 +504,7 @@ major release is from Dec. 2013, since the there had been only bugfix releases
 process misses additional permissions that may be needed.</strong></p>
 </div></blockquote>
 <p>For example on Fedora (RHEL): If you try to install a redis DB with socket
-communication and you want to connect to it from the SearXNG uWSGI, you will see a
+communication and you want to connect to it from the SearXNG-SE uWSGI, you will see a
 <em>Permission denied</em> in the log of your instance:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ERROR:searx.redisdb: [searxng (993)] can&#39;t connect redis DB ...
 ERROR:searx.redisdb:   Error 13 connecting to unix socket: /usr/local/searxng-redis/run/redis.sock. Permission denied.
@@ -576,7 +576,7 @@ Groups:
 </li>
 <li class="toctree-l2"><a class="reference internal" href="installation-nginx.html">NGINX</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation-apache.html">Apache</a></li>
-<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG maintenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG-SE maintenance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="answer-captcha.html">Answer CAPTCHA from server’s IP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.favicons.html">Favicons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.limiter.html">Limiter</a></li>
@@ -634,7 +634,7 @@ Groups:
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

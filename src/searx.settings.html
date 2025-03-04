@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Settings Loader &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>Settings Loader &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <script src="../_static/documentation_options.js?v=537f2c43"></script>
@@ -32,7 +32,7 @@
         <li class="right" >
           <a href="searx.search.processors.html" title="Search processors"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Source-Code</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Settings Loader</a></li> 
       </ul>
@@ -46,7 +46,7 @@
   <section id="module-searx.settings_loader">
 <span id="settings-loader"></span><span id="searx-settings-loader"></span><h1>Settings Loader<a class="headerlink" href="#module-searx.settings_loader" title="Link to this heading">¶</a></h1>
 <p>Implementations for loading configurations from YAML files.  This essentially
-includes the configuration of the (<a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG appl</span></a>)
+includes the configuration of the (<a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG-SE appl</span></a>)
 server. The default configuration for the application server is loaded from the
 <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/searx/settings.yml">DEFAULT_SETTINGS_FILE</a>.  This default
 configuration can be completely replaced or <a class="reference internal" href="../admin/installation-searxng.html#use-default-settings-yml"><span class="std std-ref">customized individually</span></a> and the <code class="docutils literal notranslate"><span class="pre">SEARXNG_SETTINGS_PATH</span></code> environment
@@ -56,7 +56,7 @@ to be loaded. The rules used for this can be found in the
 <ul class="simple">
 <li><p>By default, local configurations are expected in folder <code class="docutils literal notranslate"><span class="pre">/etc/searxng</span></code> from
 where applications can load them with the <a class="reference internal" href="#searx.settings_loader.get_yaml_cfg" title="searx.settings_loader.get_yaml_cfg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_yaml_cfg</span></code></a> function.</p></li>
-<li><p>By default, customized <a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG appl</span></a> settings are
+<li><p>By default, customized <a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG-SE appl</span></a> settings are
 expected in a file named <code class="docutils literal notranslate"><span class="pre">settings.yml</span></code>.</p></li>
 </ul>
 <dl class="py data">
@@ -77,7 +77,7 @@ expected in a file named <code class="docutils literal notranslate"><span class=
 <dd><p>Shortcut to load a YAML config from a file, located in the</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#searx.settings_loader.get_user_cfg_folder" title="searx.settings_loader.get_user_cfg_folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_user_cfg_folder</span></code></a> or</p></li>
-<li><p>in the <code class="docutils literal notranslate"><span class="pre">searx</span></code> folder of the SearXNG installation</p></li>
+<li><p>in the <code class="docutils literal notranslate"><span class="pre">searx</span></code> folder of the SearXNG-SE installation</p></li>
 </ul>
 </dd></dl>
 
@@ -88,14 +88,14 @@ expected in a file named <code class="docutils literal notranslate"><span class=
 <ol class="arabic">
 <li><p>If the <code class="docutils literal notranslate"><span class="pre">SEARXNG_SETTINGS_PATH</span></code> environment is set and points to a
 folder (e.g. <code class="docutils literal notranslate"><span class="pre">/etc/mysxng/</span></code>), all local configurations are expected in
-this folder.  The settings of the <a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG appl</span></a> then expected in <code class="docutils literal notranslate"><span class="pre">settings.yml</span></code>
+this folder.  The settings of the <a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG-SE appl</span></a> then expected in <code class="docutils literal notranslate"><span class="pre">settings.yml</span></code>
 (e.g. <code class="docutils literal notranslate"><span class="pre">/etc/mysxng/settings.yml</span></code>).</p></li>
 <li><p>If the <code class="docutils literal notranslate"><span class="pre">SEARXNG_SETTINGS_PATH</span></code> environment is set and points to a file
 (e.g. <code class="docutils literal notranslate"><span class="pre">/etc/mysxng/myinstance.yml</span></code>), this file contains the settings of
-the <a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG appl</span></a> and the folder
+the <a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG-SE appl</span></a> and the folder
 (e.g. <code class="docutils literal notranslate"><span class="pre">/etc/mysxng/</span></code>) is used for all other configurations.</p>
 <p>This type (<code class="docutils literal notranslate"><span class="pre">SEARXNG_SETTINGS_PATH</span></code> points to a file) is suitable for
-use cases in which different profiles of the <a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG appl</span></a> are to be managed, such as in test scenarios.</p>
+use cases in which different profiles of the <a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">SearXNG-SE appl</span></a> are to be managed, such as in test scenarios.</p>
 </li>
 <li><p>If folder <code class="docutils literal notranslate"><span class="pre">/etc/searxng</span></code> exists, it is used.</p></li>
 </ol>
@@ -107,7 +107,7 @@ not exists, a <a class="reference external" href="https://docs.python.org/3/libr
 <dl class="py function">
 <dt class="sig sig-object py" id="searx.settings_loader.load_settings">
 <span class="sig-prename descclassname"><span class="pre">searx.settings_loader.</span></span><span class="sig-name descname"><span class="pre">load_settings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">load_user_settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/searx/settings_loader.html#load_settings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#searx.settings_loader.load_settings" title="Link to this definition">¶</a></dt>
-<dd><p>Function for loading the settings of the SearXNG application
+<dd><p>Function for loading the settings of the SearXNG-SE application
 (<a class="reference internal" href="../admin/settings/index.html#searxng-settings-yml"><span class="std std-ref">settings.yml</span></a>).</p>
 </dd></dl>
 
@@ -138,7 +138,7 @@ not exists, a <a class="reference external" href="https://docs.python.org/3/libr
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Source-Code</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="searx.babel_extract.html">Custom message extractor (i18n)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.botdetection.html">Bot Detection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="searx.exceptions.html">SearXNG Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searx.exceptions.html">SearXNG-SE Exceptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.favicons.html">Favicons (source)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.infopage.html">Online <code class="docutils literal notranslate"><span class="pre">/info</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.locales.html">Locales</a></li>
@@ -203,7 +203,7 @@ not exists, a <a class="reference external" href="https://docs.python.org/3/libr
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

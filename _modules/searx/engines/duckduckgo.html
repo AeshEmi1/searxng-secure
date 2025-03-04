@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>searx.engines.duckduckgo &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>searx.engines.duckduckgo &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../../../_static/searxng.css?v=52e4ff28" />
     <script src="../../../_static/documentation_options.js?v=537f2c43"></script>
@@ -24,7 +24,7 @@
         <li class="right" >
           <a href="../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="../engines.html" accesskey="U">searx.engines</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">searx.engines.duckduckgo</a></li> 
@@ -145,7 +145,7 @@
 <span class="sd">    (such as extremely long search terms that are often sent by bots), no ``vqd``</span>
 <span class="sd">    value can be determined.</span>
 
-<span class="sd">    If SearXNG cannot determine a ``vqd`` value, then no request should go out</span>
+<span class="sd">    If SearXNG-SE cannot determine a ``vqd`` value, then no request should go out</span>
 <span class="sd">    to DDG.</span>
 
 <span class="sd">    .. attention::</span>
@@ -200,7 +200,7 @@
 <span class="sd">       eng_region = traits.get_region(params[&#39;searxng_locale&#39;], traits.all_locale)</span>
 <span class="sd">       eng_lang = get_ddg_lang(traits, params[&#39;searxng_locale&#39;])</span>
 
-<span class="sd">    It might confuse, but the ``l`` value of the cookie is what SearXNG calls</span>
+<span class="sd">    It might confuse, but the ``l`` value of the cookie is what SearXNG-SE calls</span>
 <span class="sd">    the *region*:</span>
 
 <span class="sd">    .. code:: python</span>
@@ -382,7 +382,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="c1"># Don&#39;t try to call follow up pages without a vqd value.  DDG</span>
             <span class="c1"># recognizes this as a request from a bot.  This lowers the</span>
-            <span class="c1"># reputation of the SearXNG IP and DDG starts to activate CAPTCHAs.</span>
+            <span class="c1"># reputation of the SearXNG-SE IP and DDG starts to activate CAPTCHAs.</span>
             <span class="n">params</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
             <span class="k">return</span>
 
@@ -469,7 +469,7 @@
 
 <span class="sd">    SearXNG&#39;s ``all`` locale maps DuckDuckGo&#39;s &quot;Alle regions&quot; (``wt-wt``).</span>
 <span class="sd">    DuckDuckGo&#39;s language &quot;Browsers preferred language&quot; (``wt_WT``) makes no</span>
-<span class="sd">    sense in a SearXNG request since SearXNG&#39;s ``all`` will not add a</span>
+<span class="sd">    sense in a SearXNG-SE request since SearXNG&#39;s ``all`` will not add a</span>
 <span class="sd">    ``Accept-Language`` HTTP header.  The value in ``engine_traits.all_locale``</span>
 <span class="sd">    is ``wt-wt`` (the region).</span>
 
@@ -629,7 +629,7 @@
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

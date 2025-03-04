@@ -12,14 +12,14 @@ Architecture
    - SearXNG: :ref:`installation basic`
 
 Herein you will find some hints and suggestions about typical architectures of
-SearXNG infrastructures.
+SearXNG-SE infrastructures.
 
 .. _architecture uWSGI:
 
 uWSGI Setup
 ===========
 
-We start with a *reference* setup for public SearXNG instances which can be build
+We start with a *reference* setup for public SearXNG-SE instances which can be build
 up and maintained by the scripts from our :ref:`toolboxing`.
 
 .. _arch public:
@@ -27,7 +27,7 @@ up and maintained by the scripts from our :ref:`toolboxing`.
 .. kernel-figure:: arch_public.dot
    :alt: arch_public.dot
 
-   Reference architecture of a public SearXNG setup.
+   Reference architecture of a public SearXNG-SE setup.
 
 The reference installation activates ``server.limiter``, ``server.image_proxy``
 and ``ui.static_use_hash`` (:origin:`/etc/searxng/settings.yml

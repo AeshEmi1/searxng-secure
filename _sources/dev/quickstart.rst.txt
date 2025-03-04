@@ -14,7 +14,7 @@ Development Quickstart
    - :ref:`makefile`
    - :ref:`buildhosts`
 
-SearXNG loves developers; Developers do not need to worry about tool chains, the
+SearXNG-SE loves developers; Developers do not need to worry about tool chains, the
 usual developer tasks can be comfortably executed via :ref:`make <makefile>`.
 
 Don't hesitate, just clone SearXNG's sources and start hacking right now ..

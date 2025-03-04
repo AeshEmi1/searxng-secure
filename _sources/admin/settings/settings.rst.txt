@@ -27,7 +27,7 @@ The initial ``settings.yml`` we be load from these locations:
 1. the full path specified in the ``SEARXNG_SETTINGS_PATH`` environment variable.
 2. ``/etc/searxng/settings.yml``
 
-If these files don't exist (or are empty or can't be read), SearXNG uses the
+If these files don't exist (or are empty or can't be read), SearXNG-SE uses the
 :origin:`searx/settings.yml` file.  Read :ref:`settings use_default_settings` to
 see how you can simplify your *user defined* ``settings.yml``.
 
@@ -64,7 +64,7 @@ and can relied on the default configuration :origin:`searx/settings.yml` using:
 ``engines:``
   With ``use_default_settings: true``, each settings can be override in a
   similar way, the ``engines`` section is merged according to the engine
-  ``name``.  In this example, SearXNG will load all the default engines, will
+  ``name``.  In this example, SearXNG-SE will load all the default engines, will
   enable the ``bing`` engine and define a :ref:`token <private engines>` for
   the arch linux engine:
 
@@ -82,7 +82,7 @@ and can relied on the default configuration :origin:`searx/settings.yml` using:
 
 ``engines:`` / ``remove:``
   It is possible to remove some engines from the default settings. The following
-  example is similar to the above one, but SearXNG doesn't load the the google
+  example is similar to the above one, but SearXNG-SE doesn't load the the google
   engine:
 
   .. code:: yaml
@@ -99,7 +99,7 @@ and can relied on the default configuration :origin:`searx/settings.yml` using:
 
 ``engines:`` / ``keep_only:``
   As an alternative, it is possible to specify the engines to keep. In the
-  following example, SearXNG has only two engines:
+  following example, SearXNG-SE has only two engines:
 
   .. code:: yaml
 

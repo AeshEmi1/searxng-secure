@@ -45,10 +45,10 @@ recommends two methods:
             contains: [Service]
                       ExecStart=/usr/bin/uwsgi --ini /etc/uwsgi/%I.ini
 
-    SearXNG application:   /etc/uwsgi/searxng.ini
+    SearXNG-SE application:   /etc/uwsgi/searxng.ini
             links to: /etc/uwsgi/apps-available/searxng.ini
 
-  The SearXNG app (template ``/etc/uwsgi/%I.ini``) can be maintained as known
+  The SearXNG-SE app (template ``/etc/uwsgi/%I.ini``) can be maintained as known
   from common systemd units:
 
   .. code:: sh
@@ -70,7 +70,7 @@ recommends two methods:
   modified, a corresponding action takes place: a new uWSGI instance is started,
   reload or stopped.  Take Fedora and a ``searxng.ini`` as example::
 
-    to install & start SearXNG instance create --> /etc/uwsgi.d/searxng.ini
+    to install & start SearXNG-SE instance create --> /etc/uwsgi.d/searxng.ini
     to reload the instance edit timestamp      --> touch /etc/uwsgi.d/searxng.ini
     to stop instance remove ini                --> rm /etc/uwsgi.d/searxng.ini
 
@@ -236,7 +236,7 @@ major release is from Dec. 2013, since the there had been only bugfix releases
   process misses additional permissions that may be needed.**
 
 For example on Fedora (RHEL): If you try to install a redis DB with socket
-communication and you want to connect to it from the SearXNG uWSGI, you will see a
+communication and you want to connect to it from the SearXNG-SE uWSGI, you will see a
 *Permission denied* in the log of your instance::
 
   ERROR:searx.redisdb: [searxng (993)] can't connect redis DB ...

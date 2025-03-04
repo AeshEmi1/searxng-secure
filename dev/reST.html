@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>reST primer &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>reST primer &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <script src="../_static/documentation_options.js?v=537f2c43"></script>
@@ -32,7 +32,7 @@
         <li class="right" >
           <a href="makefile.html" title="Makefile &amp; ./manage"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Developer documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">reST primer</a></li> 
       </ul>
@@ -47,10 +47,10 @@
 <span id="id1"></span><h1>reST primer<a class="headerlink" href="#rest-primer" title="Link to this heading">¶</a></h1>
 <aside class="sidebar">
 <p class="sidebar-title"><a class="reference external" href="https://en.wikipedia.org/wiki/KISS_principle">KISS</a> and <a class="reference external" href="https://docs.python-guide.org/writing/style/">readability</a></p>
-<p>Instead of defining more and more roles, we at SearXNG encourage our
+<p>Instead of defining more and more roles, we at SearXNG-SE encourage our
 contributors to follow principles like <a class="reference external" href="https://en.wikipedia.org/wiki/KISS_principle">KISS</a> and <a class="reference external" href="https://docs.python-guide.org/writing/style/">readability</a>.</p>
 </aside>
-<p>We at SearXNG are using reStructuredText (aka <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reST</a>) markup for all kind of
+<p>We at SearXNG-SE are using reStructuredText (aka <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reST</a>) markup for all kind of
 documentation.  With the builders from the <a class="reference external" href="https://www.sphinx-doc.org">Sphinx</a> project a HTML output is
 generated and deployed at <a class="reference external" href="https://docs.searxng.org/">docs.searxng.org</a>.  For build prerequisites read
 <a class="reference internal" href="../admin/buildhosts.html#docs-build"><span class="std std-ref">Build docs</span></a>.</p>
@@ -168,7 +168,7 @@ different group of audience.</p>
 meta crawlers and privacy.</p>
 </dd>
 <dt>Admin’s POV: <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/docs/admin">git://docs/admin</a></dt><dd><p>A typical Admin knows about setting up services on a linux system, but he does
-not know all the pros and cons of a SearXNG setup.</p>
+not know all the pros and cons of a SearXNG-SE setup.</p>
 </dd>
 <dt>Developer’s POV: <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/docs/dev">git://docs/dev</a></dt><dd><p>Depending on the <a class="reference external" href="https://docs.python-guide.org/writing/style/">readability</a> of code, a typical developer is able to read and
 understand source code.  Describe what a item aims to do (e.g. a function).
@@ -984,7 +984,7 @@ are mappings from field names to field bodies.  They marked up like this:</p>
 site effects.  Here is the source of the sidebar <a class="reference internal" href="#rest-primer"><span class="std std-ref">on top of this page</span></a>.</p>
 <div class="highlight-reST notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">sidebar</span><span class="p">::</span> KISS_ and readability_
 
-   Instead of defining more and more roles, we at SearXNG encourage our
+   Instead of defining more and more roles, we at SearXNG-SE encourage our
    contributors to follow principles like KISS_ and readability_.
 </pre></div>
 </div>
@@ -1417,7 +1417,7 @@ kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></td>
 <p>All <em>generic-doc</em> tasks are running in the <a class="reference internal" href="makefile.html#make-install"><span class="std std-ref">Python environment (make install)</span></a>.</p>
 </aside>
 <p>Templating is suitable for documentation which is created generic at the build
-time.  The <a class="reference external" href="https://github.com/tardyp/sphinx-jinja">sphinx-jinja</a> extension evaluates <a class="reference external" href="https://jinja.palletsprojects.com/">jinja</a> templates in the <a class="reference internal" href="makefile.html#make-install"><span class="std std-ref">Python environment (make install)</span></a> (with SearXNG modules installed).  We use this e.g. to build chapter:
+time.  The <a class="reference external" href="https://github.com/tardyp/sphinx-jinja">sphinx-jinja</a> extension evaluates <a class="reference external" href="https://jinja.palletsprojects.com/">jinja</a> templates in the <a class="reference internal" href="makefile.html#make-install"><span class="std std-ref">Python environment (make install)</span></a> (with SearXNG-SE modules installed).  We use this e.g. to build chapter:
 <a class="reference internal" href="../user/configured_engines.html#configured-engines"><span class="std std-ref">Configured Engines</span></a>.  Below the jinja directive from the
 <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/docs/admin/engines.rst">git://docs/admin/engines.rst</a> is shown:</p>
 <div class="highlight-reST notranslate"><div class="highlight"><pre><span></span><span class="gh">==================</span>
@@ -1433,7 +1433,7 @@ time.  The <a class="reference external" href="https://github.com/tardyp/sphinx-
 
 <span class="p">..</span> <span class="ow">jinja</span><span class="p">::</span> searx
 
-   SearXNG supports {{engines | length}} search engines of which
+   SearXNG-SE supports {{engines | length}} search engines of which
    {{enabled_engine_count}} are enabled by default.
 
    Engines can be assigned to multiple <span class="na">:ref:</span><span class="nv">`categories &lt;engine categories&gt;`</span>.
@@ -1747,7 +1747,7 @@ gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>searx.enginelib.traits &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>searx.enginelib.traits &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../../../_static/searxng.css?v=52e4ff28" />
     <script src="../../../_static/documentation_options.js?v=537f2c43"></script>
@@ -24,7 +24,7 @@
         <li class="right" >
           <a href="../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="../enginelib.html" accesskey="U">searx.enginelib</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">searx.enginelib.traits</a></li> 
@@ -128,7 +128,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">custom</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">],</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]]]</span> <span class="o">=</span> <span class="n">dataclasses</span><span class="o">.</span><span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">dict</span><span class="p">)</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;A place to store engine&#39;s custom traits, not related to the SearXNG core.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;A place to store engine&#39;s custom traits, not related to the SearXNG-SE core.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="EngineTraits.get_language">
@@ -296,8 +296,8 @@
 
             <span class="n">traits</span> <span class="o">=</span> <span class="n">EngineTraits</span><span class="o">.</span><span class="n">fetch_traits</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">traits</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">log</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%-20s</span><span class="s2">: SearXNG languages --&gt; </span><span class="si">%s</span><span class="s2"> &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">engine_name</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">traits</span><span class="o">.</span><span class="n">languages</span><span class="p">)))</span>
-                <span class="n">log</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%-20s</span><span class="s2">: SearXNG regions   --&gt; </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">engine_name</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">traits</span><span class="o">.</span><span class="n">regions</span><span class="p">)))</span>
+                <span class="n">log</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%-20s</span><span class="s2">: SearXNG-SE languages --&gt; </span><span class="si">%s</span><span class="s2"> &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">engine_name</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">traits</span><span class="o">.</span><span class="n">languages</span><span class="p">)))</span>
+                <span class="n">log</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%-20s</span><span class="s2">: SearXNG-SE regions   --&gt; </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">engine_name</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">traits</span><span class="o">.</span><span class="n">regions</span><span class="p">)))</span>
                 <span class="n">obj</span><span class="p">[</span><span class="n">engine_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">traits</span>
 
         <span class="k">return</span> <span class="n">obj</span>
@@ -391,7 +391,7 @@
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

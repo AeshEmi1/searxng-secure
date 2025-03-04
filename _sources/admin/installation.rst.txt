@@ -17,6 +17,6 @@ special preferences, it's recommended to use the :ref:`installation docker` or t
 
 .. attention::
 
-   SearXNG is growing rapidly, you should regularly read our :ref:`migrate and
+   SearXNG-SE is growing rapidly, you should regularly read our :ref:`migrate and
    stay tuned` section.  If you want to upgrade an existing instance or migrate
    from searx to SearXNG, you should read this section first!

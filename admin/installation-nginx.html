@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NGINX &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>NGINX &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
@@ -34,7 +34,7 @@
         <li class="right" >
           <a href="installation-uwsgi.html" title="uWSGI"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Administrator documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">NGINX</a></li> 
       </ul>
@@ -47,9 +47,9 @@
             
   <section id="nginx">
 <span id="installation-nginx"></span><h1>NGINX<a class="headerlink" href="#nginx" title="Link to this heading">¶</a></h1>
-<p>This section explains how to set up a SearXNG instance using the HTTP server <a class="reference external" href="https://docs.nginx.com/nginx/admin-guide/">nginx</a>.
+<p>This section explains how to set up a SearXNG-SE instance using the HTTP server <a class="reference external" href="https://docs.nginx.com/nginx/admin-guide/">nginx</a>.
 If you have used the <a class="reference internal" href="installation-scripts.html#installation-scripts"><span class="std std-ref">Installation Script</span></a> and do not have any special preferences
-you can install the <a class="reference internal" href="#nginx-searxng-site"><span class="std std-ref">SearXNG site</span></a> using
+you can install the <a class="reference internal" href="#nginx-searxng-site"><span class="std std-ref">SearXNG-SE site</span></a> using
 <a class="reference internal" href="../utils/searxng.sh.html#searxng-sh-overview"><span class="std std-ref">searxng.sh</span></a>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>-H<span class="w"> </span>./utils/searxng.sh<span class="w"> </span>install<span class="w"> </span>nginx
 </pre></div>
@@ -69,7 +69,7 @@ section might give you some guidance.</p>
 <nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#the-nginx-http-server" id="id2">The nginx HTTP server</a></p></li>
-<li><p><a class="reference internal" href="#nginx-s-searxng-site" id="id3">NGINX’s SearXNG site</a></p></li>
+<li><p><a class="reference internal" href="#nginx-s-searxng-site" id="id3">NGINX’s SearXNG-SE site</a></p></li>
 <li><p><a class="reference internal" href="#disable-logs" id="id4">Disable logs</a></p></li>
 </ul>
 </nav>
@@ -124,12 +124,12 @@ depends on the linux distribution:</p>
 </div></div>
 </section>
 <section id="nginx-s-searxng-site">
-<span id="nginx-searxng-site"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">NGINX’s SearXNG site</a><a class="headerlink" href="#nginx-s-searxng-site" title="Link to this heading">¶</a></h2>
+<span id="nginx-searxng-site"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">NGINX’s SearXNG-SE site</a><a class="headerlink" href="#nginx-s-searxng-site" title="Link to this heading">¶</a></h2>
 <p>Now you have to create a configuration file (<code class="docutils literal notranslate"><span class="pre">searxng.conf</span></code>) for the SearXNG
 site.  If <a class="reference external" href="https://docs.nginx.com/nginx/admin-guide/">nginx</a> is new to you, the <a class="reference external" href="https://nginx.org/en/docs/beginners_guide.html">nginx beginners guide</a> is a good starting
 point and the <a class="reference external" href="https://www.nginx.com/resources/wiki/start/">Getting Started wiki</a> is always a good resource <em>to keep in the
 pocket</em>.</p>
-<p>Depending on what your SearXNG installation is listening on, you need a http or socket
+<p>Depending on what your SearXNG-SE installation is listening on, you need a http or socket
 communication to upstream.</p>
 <div class="sphinx-tabs docutils container">
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-c29ja2V0" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-c29ja2V0" name="c29ja2V0" role="tab" tabindex="0">socket</button><button aria-controls="panel-2-aHR0cA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-aHR0cA==" name="aHR0cA==" role="tab" tabindex="-1">http</button></div><div aria-labelledby="tab-2-c29ja2V0" class="sphinx-tabs-panel group-tab" id="panel-2-c29ja2V0" name="c29ja2V0" role="tabpanel" tabindex="0"><div class="highlight-nginx notranslate"><div class="highlight"><pre><span></span><span class="k">location</span><span class="w"> </span><span class="s">/searxng</span><span class="w"> </span><span class="p">{</span>
@@ -290,12 +290,12 @@ sudo<span class="w"> </span>-H<span class="w"> </span>touch<span class="w"> </sp
 <li class="toctree-l2"><a class="reference internal" href="installation-uwsgi.html">uWSGI</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">NGINX</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#the-nginx-http-server">The nginx HTTP server</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#nginx-s-searxng-site">NGINX’s SearXNG site</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nginx-s-searxng-site">NGINX’s SearXNG-SE site</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#disable-logs">Disable logs</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="installation-apache.html">Apache</a></li>
-<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG maintenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG-SE maintenance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="answer-captcha.html">Answer CAPTCHA from server’s IP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.favicons.html">Favicons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.limiter.html">Limiter</a></li>
@@ -353,7 +353,7 @@ sudo<span class="w"> </span>-H<span class="w"> </span>touch<span class="w"> </sp
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

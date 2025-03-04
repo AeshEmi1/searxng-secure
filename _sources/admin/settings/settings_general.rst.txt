@@ -16,7 +16,7 @@
      open_metrics: ''
 
 ``debug`` : ``$SEARXNG_DEBUG``
-  Allow a more detailed log if you run SearXNG directly. Display *detailed* error
+  Allow a more detailed log if you run SearXNG-SE directly. Display *detailed* error
   messages in the browser too, so this must be deactivated in production.
 
 ``donation_url`` :

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bot Detection &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>Bot Detection &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <script src="../_static/documentation_options.js?v=537f2c43"></script>
@@ -14,7 +14,7 @@
     <script data-project="searxng" data-version="2025.3.2+8984d7ae0" src="../_static/describe_version.js?v=fa7f30d0"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="SearXNG Exceptions" href="searx.exceptions.html" />
+    <link rel="next" title="SearXNG-SE Exceptions" href="searx.exceptions.html" />
     <link rel="prev" title="Custom message extractor (i18n)" href="searx.babel_extract.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="Related">
@@ -27,12 +27,12 @@
           <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="searx.exceptions.html" title="SearXNG Exceptions"
+          <a href="searx.exceptions.html" title="SearXNG-SE Exceptions"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="searx.babel_extract.html" title="Custom message extractor (i18n)"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Source-Code</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Bot Detection</a></li> 
       </ul>
@@ -85,7 +85,7 @@ headers and incoming headers can be faked it may happen that the IP cannot
 be determined correctly.</p>
 <aside class="sidebar">
 <p class="sidebar-title"><a class="reference external" href="https://flask.palletsprojects.com/en/stable/api/#flask.Request.remote_addr" title="(in Flask v3.1.x)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">flask.Request.remote_addr</span></code></a></p>
-<p>SearXNG uses Werkzeug’s <a class="reference external" href="https://werkzeug.palletsprojects.com/middleware/proxy_fix/">ProxyFix</a> (with it default <code class="docutils literal notranslate"><span class="pre">x_for=1</span></code>).</p>
+<p>SearXNG-SE uses Werkzeug’s <a class="reference external" href="https://werkzeug.palletsprojects.com/middleware/proxy_fix/">ProxyFix</a> (with it default <code class="docutils literal notranslate"><span class="pre">x_for=1</span></code>).</p>
 </aside>
 <p>This function tries to get the remote IP in the order listed below,
 additional some tests are done and if inconsistencies or errors are
@@ -129,7 +129,7 @@ to return the default <code class="docutils literal notranslate"><span class="pr
 <dl class="py data">
 <dt class="sig sig-object py" id="searx.botdetection.ip_lists.SEARXNG_ORG">
 <span class="sig-prename descclassname"><span class="pre">searx.botdetection.ip_lists.</span></span><span class="sig-name descname"><span class="pre">SEARXNG_ORG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['167.235.158.251',</span> <span class="pre">'2a01:04f8:1c1c:8fc2::/64']</span></em><a class="headerlink" href="#searx.botdetection.ip_lists.SEARXNG_ORG" title="Link to this definition">¶</a></dt>
-<dd><p>Passlist of IPs from the SearXNG organization, e.g. <cite>check.searx.space</cite>.</p>
+<dd><p>Passlist of IPs from the SearXNG-SE organization, e.g. <cite>check.searx.space</cite>.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -515,7 +515,7 @@ string.</p>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="searx.exceptions.html">SearXNG Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="searx.exceptions.html">SearXNG-SE Exceptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.favicons.html">Favicons (source)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.infopage.html">Online <code class="docutils literal notranslate"><span class="pre">/info</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="searx.locales.html">Locales</a></li>
@@ -546,7 +546,7 @@ string.</p>
       <li><a href="index.html">Source-Code</a>
         <ul>
           <li>Previous: <a href="searx.babel_extract.html" title="previous chapter">Custom message extractor (i18n)</a>
-          <li>Next: <a href="searx.exceptions.html" title="next chapter">SearXNG Exceptions</a></ul>
+          <li>Next: <a href="searx.exceptions.html" title="next chapter">SearXNG-SE Exceptions</a></ul>
       </li>
     </ul>
   </li>
@@ -573,7 +573,7 @@ string.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

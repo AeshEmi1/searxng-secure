@@ -14,7 +14,7 @@ sockets, don't forget to check the access rights on the socket::
   srwxrwx--- 1 searxng-redis searxng-redis ... /usr/local/searxng-redis/run/redis.sock
 
 In this example read/write access is given to the *searxng-redis* group.  To get
-access rights to redis instance (the socket), your SearXNG (or even your
+access rights to redis instance (the socket), your SearXNG-SE (or even your
 developer) account needs to be added to the *searxng-redis* group.
 
 ``url`` : ``$SEARXNG_REDIS_URL``

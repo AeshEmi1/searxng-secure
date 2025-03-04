@@ -18,8 +18,8 @@ Translation
 
    - :ref:`searx.babel_extract`
    - Weblate_
-   - SearXNG `translations branch`_
-   - SearXNG `Weblate repository`_
+   - SearXNG-SE `translations branch`_
+   - SearXNG-SE `Weblate repository`_
    - Weblate Client: wlc_
    - Babel Command-Line: `pybabel <http://babel.pocoo.org/en/latest/cmdline.html>`_
    - `weblate workflow <https://docs.weblate.org/en/latest/workflows.html>`_
@@ -27,12 +27,12 @@ Translation
 Translation takes place on translate.codeberg.org_.
 
 Translations which has been added by translators on the translate.codeberg.org_ UI are
-committed to Weblate's counterpart of the SearXNG *origin* repository which is
+committed to Weblate's counterpart of the SearXNG-SE *origin* repository which is
 located at ``https://translate.codeberg.org/git/searxng/searxng``.
 
-There is no need to clone this repository, :ref:`SearXNG Weblate workflow` take
+There is no need to clone this repository, :ref:`SearXNG-SE Weblate workflow` take
 care of the synchronization with the *origin*.  To avoid merging commits from
-the counterpart directly on the ``master`` branch of *SearXNG origin*, a *pull
+the counterpart directly on the ``master`` branch of *SearXNG-SE origin*, a *pull
 request* (PR) is created by this workflow.
 
 Weblate monitors the `translations branch`_, not the ``master`` branch.  This
@@ -44,14 +44,14 @@ only the
 - ``translation/*/messages.po`` files, nothing else.
 
 
-.. _SearXNG Weblate workflow:
+.. _SearXNG-SE Weblate workflow:
 
 .. figure:: translation.svg
 
    SearXNG's PR workflow to be in sync with Weblate
 
 Sync from *origin* to *weblate*: using ``make weblate.push.translations``
-  For each commit on the ``master`` branch of SearXNG *origin* the GitHub job
+  For each commit on the ``master`` branch of SearXNG-SE *origin* the GitHub job
   :origin:`babel / Update translations branch
   <.github/workflows/integration.yml>` checks for updated translations.
 

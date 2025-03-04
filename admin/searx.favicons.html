@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Favicons &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>Favicons &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <script src="../_static/documentation_options.js?v=537f2c43"></script>
@@ -32,7 +32,7 @@
         <li class="right" >
           <a href="answer-captcha.html" title="Answer CAPTCHA from server’s IP"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Administrator documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Favicons</a></li> 
       </ul>
@@ -64,7 +64,7 @@
 </li>
 </ul>
 </nav>
-<p>Activating the favicons in SearXNG is very easy, but this <strong>generates a
+<p>Activating the favicons in SearXNG-SE is very easy, but this <strong>generates a
 significantly higher load</strong> in the client/server communication and increases
 resources needed on the server.</p>
 <p>To mitigate these disadvantages, various methods have been implemented,
@@ -76,7 +76,7 @@ requirements and maintained regularly.</p>
 <span class="w">  </span><span class="nt">favicon_resolver</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;duckduckgo&quot;</span>
 </pre></div>
 </div>
-<p>By default and without any extensions, SearXNG serves these resolvers:</p>
+<p>By default and without any extensions, SearXNG-SE serves these resolvers:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">duckduckgo</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">allesedv</span></code></p></li>
@@ -135,7 +135,7 @@ production environment.  The <a class="reference external" href="https://refspec
 cache of applications, so a suitable storage location of SearXNG’s caches is
 folder <code class="docutils literal notranslate"><span class="pre">/var/cache/searxng</span></code>.</p>
 <p>In a standard installation (compare <a class="reference internal" href="installation-searxng.html#create-searxng-user"><span class="std std-ref">Create user</span></a>), the folder
-must be created and the user under which the SearXNG process is running must
+must be created and the user under which the SearXNG-SE process is running must
 be given write permission to this folder.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>mkdir<span class="w"> </span>/var/cache/searxng
 $<span class="w"> </span>sudo<span class="w"> </span>chown<span class="w"> </span>root:searxng<span class="w"> </span>/var/cache/searxng/
@@ -156,7 +156,7 @@ off completely, the cache grows uncontrollably.</p>
 </div>
 </dd>
 </dl>
-<p>SearXNG hosters can change other parameters of the cache as required:</p>
+<p>SearXNG-SE hosters can change other parameters of the cache as required:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../src/searx.favicons.html#searx.favicons.cache.FaviconCacheConfig.HOLD_TIME" title="searx.favicons.cache.FaviconCacheConfig.HOLD_TIME"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cache.HOLD_TIME</span></code></a></p></li>
 <li><p><a class="reference internal" href="../src/searx.favicons.html#searx.favicons.cache.FaviconCacheConfig.BLOB_MAX_BYTES" title="searx.favicons.cache.FaviconCacheConfig.BLOB_MAX_BYTES"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cache.BLOB_MAX_BYTES</span></code></a></p></li>
@@ -206,8 +206,8 @@ which can greatly reduce the number of additional requests).</p>
 from an external source.  The resolver functions available to the user are
 registered with their fully qualified name (<a class="reference external" href="https://en.wikipedia.org/wiki/Fully_qualified_name">FQN</a>) in a <code class="docutils literal notranslate"><span class="pre">resolver_map</span></code>.</p>
 <p>If no <code class="docutils literal notranslate"><span class="pre">resolver_map</span></code> is defined in the <code class="docutils literal notranslate"><span class="pre">favicon.toml</span></code>, the favicon
-infrastructure of SearXNG generates this <code class="docutils literal notranslate"><span class="pre">resolver_map</span></code> automatically
-depending on the <code class="docutils literal notranslate"><span class="pre">settings.yml</span></code>.  SearXNG would automatically generate the
+infrastructure of SearXNG-SE generates this <code class="docutils literal notranslate"><span class="pre">resolver_map</span></code> automatically
+depending on the <code class="docutils literal notranslate"><span class="pre">settings.yml</span></code>.  SearXNG-SE would automatically generate the
 following TOML configuration from the following YAML configuration:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">search</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">favicon_resolver</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;duckduckgo&quot;</span>
@@ -279,7 +279,7 @@ into the <em>proxy</em>:</p>
 <li class="toctree-l2"><a class="reference internal" href="installation-uwsgi.html">uWSGI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation-nginx.html">NGINX</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation-apache.html">Apache</a></li>
-<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG maintenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-searxng.html">SearXNG-SE maintenance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="answer-captcha.html">Answer CAPTCHA from server’s IP</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Favicons</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#infrastructure">Infrastructure</a></li>
@@ -348,7 +348,7 @@ into the <em>proxy</em>:</p>
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

@@ -13,7 +13,7 @@ Favicons
    :local:
    :backlinks: entry
 
-Activating the favicons in SearXNG is very easy, but this **generates a
+Activating the favicons in SearXNG-SE is very easy, but this **generates a
 significantly higher load** in the client/server communication and increases
 resources needed on the server.
 
@@ -29,7 +29,7 @@ To activate favicons in SearXNG's result list, set a default
    search:
      favicon_resolver: "duckduckgo"
 
-By default and without any extensions, SearXNG serves these resolvers:
+By default and without any extensions, SearXNG-SE serves these resolvers:
 
 - ``duckduckgo``
 - ``allesedv``
@@ -98,7 +98,7 @@ TOML_ configuration is created in the file ``/etc/searxng/favicons.toml``.
   folder ``/var/cache/searxng``.
 
   In a standard installation (compare :ref:`create searxng user`), the folder
-  must be created and the user under which the SearXNG process is running must
+  must be created and the user under which the SearXNG-SE process is running must
   be given write permission to this folder.
 
   .. code:: bash
@@ -121,7 +121,7 @@ TOML_ configuration is created in the file ``/etc/searxng/favicons.toml``.
      If the maintenance period is too long or maintenance is switched
      off completely, the cache grows uncontrollably.
 
-SearXNG hosters can change other parameters of the cache as required:
+SearXNG-SE hosters can change other parameters of the cache as required:
 
 - :py:obj:`cache.HOLD_TIME <.FaviconCacheConfig.HOLD_TIME>`
 - :py:obj:`cache.BLOB_MAX_BYTES <.FaviconCacheConfig.BLOB_MAX_BYTES>`
@@ -187,8 +187,8 @@ from an external source.  The resolver functions available to the user are
 registered with their fully qualified name (FQN_) in a ``resolver_map``.
 
 If no ``resolver_map`` is defined in the ``favicon.toml``, the favicon
-infrastructure of SearXNG generates this ``resolver_map`` automatically
-depending on the ``settings.yml``.  SearXNG would automatically generate the
+infrastructure of SearXNG-SE generates this ``resolver_map`` automatically
+depending on the ``settings.yml``.  SearXNG-SE would automatically generate the
 following TOML configuration from the following YAML configuration:
 
 .. code:: yaml

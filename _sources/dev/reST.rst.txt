@@ -6,10 +6,10 @@ reST primer
 
 .. sidebar:: KISS_ and readability_
 
-   Instead of defining more and more roles, we at SearXNG encourage our
+   Instead of defining more and more roles, we at SearXNG-SE encourage our
    contributors to follow principles like KISS_ and readability_.
 
-We at SearXNG are using reStructuredText (aka reST_) markup for all kind of
+We at SearXNG-SE are using reStructuredText (aka reST_) markup for all kind of
 documentation.  With the builders from the Sphinx_ project a HTML output is
 generated and deployed at docs.searxng.org_.  For build prerequisites read
 :ref:`docs build`.
@@ -80,7 +80,7 @@ User's POV: :origin:`docs/user`
 
 Admin's POV: :origin:`docs/admin`
   A typical Admin knows about setting up services on a linux system, but he does
-  not know all the pros and cons of a SearXNG setup.
+  not know all the pros and cons of a SearXNG-SE setup.
 
 Developer's POV: :origin:`docs/dev`
   Depending on the readability_ of code, a typical developer is able to read and
@@ -902,7 +902,7 @@ primer>`.
 
    .. sidebar:: KISS_ and readability_
 
-      Instead of defining more and more roles, we at SearXNG encourage our
+      Instead of defining more and more roles, we at SearXNG-SE encourage our
       contributors to follow principles like KISS_ and readability_.
 
 Generic admonition
@@ -1282,7 +1282,7 @@ Templating
 
 Templating is suitable for documentation which is created generic at the build
 time.  The sphinx-jinja_ extension evaluates jinja_ templates in the :ref:`make
-install` (with SearXNG modules installed).  We use this e.g. to build chapter:
+install` (with SearXNG-SE modules installed).  We use this e.g. to build chapter:
 :ref:`configured engines`.  Below the jinja directive from the
 :origin:`docs/admin/engines.rst` is shown:
 

@@ -13,7 +13,7 @@ Plugins
 
 The built-in plugins can be activated or deactivated via the settings
 (:ref:`settings enabled_plugins`) and external plugins can be integrated into
-SearXNG (:ref:`settings external_plugins`).
+SearXNG-SE (:ref:`settings external_plugins`).
 
 
 .. _settings enabled_plugins:
@@ -40,9 +40,9 @@ configuration looks like:
 ``plugins:`` (external)
 =======================
 
-SearXNG supports *external plugins* / there is no need to install one, SearXNG
+SearXNG-SE supports *external plugins* / there is no need to install one, SearXNG
 runs out of the box.  But to demonstrate; in the example below we install the
-SearXNG plugins from *The Green Web Foundation* `[ref]
+SearXNG-SE plugins from *The Green Web Foundation* `[ref]
 <https://www.thegreenwebfoundation.org/news/searching-the-green-web-with-searx/>`__:
 
 .. code:: bash

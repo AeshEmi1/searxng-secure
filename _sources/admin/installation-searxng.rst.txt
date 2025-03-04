@@ -10,7 +10,7 @@ Step by step installation
    :backlinks: entry
 
 
-In this section we show the setup of a SearXNG instance that will be installed
+In this section we show the setup of a SearXNG-SE instance that will be installed
 by the :ref:`installation scripts`.
 
 .. _install packages:
@@ -37,7 +37,7 @@ Create user
 
 .. _searxng-src:
 
-Install SearXNG & dependencies
+Install SearXNG-SE & dependencies
 ==============================
 
 Start a interactive shell from new created user and clone SearXNG:
@@ -52,7 +52,7 @@ In the same shell create *virtualenv*:
    :start-after: START create virtualenv
    :end-before: END create virtualenv
 
-To install SearXNG's dependencies, exit the SearXNG *bash* session you opened above
+To install SearXNG's dependencies, exit the SearXNG-SE *bash* session you opened above
 and start a new one.  Before installing, check if your *virtualenv* was sourced
 from the login (*~/.profile*):
 
@@ -118,8 +118,8 @@ For a *minimal setup* you need to set ``server:secret_key``.
 Check
 =====
 
-To check your SearXNG setup, optional enable debugging and start the *webapp*.
-SearXNG looks at the exported environment ``$SEARXNG_SETTINGS_PATH`` for a
+To check your SearXNG-SE setup, optional enable debugging and start the *webapp*.
+SearXNG-SE looks at the exported environment ``$SEARXNG_SETTINGS_PATH`` for a
 configuration file.
 
 .. kernel-include:: $DOCS_BUILD/includes/searxng.rst
@@ -127,6 +127,6 @@ configuration file.
    :end-before: END check searxng installation
 
 If everything works fine, hit ``[CTRL-C]`` to stop the *webapp* and disable the
-debug option in ``settings.yml``. You can now exit SearXNG user bash session (enter exit
-command twice).  At this point SearXNG is not demonized; uwsgi allows this.
+debug option in ``settings.yml``. You can now exit SearXNG-SE user bash session (enter exit
+command twice).  At this point SearXNG-SE is not demonized; uwsgi allows this.
 

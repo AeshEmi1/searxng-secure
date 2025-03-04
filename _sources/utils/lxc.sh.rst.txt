@@ -43,7 +43,7 @@ once::
   $ snap install lxd
   $ lxd init --auto
 
-To make use of the containers from the *SearXNG suite*, you have to build the
+To make use of the containers from the *SearXNG-SE suite*, you have to build the
 :ref:`LXC suite containers <lxc.sh help>` initial.  But be warned, **this might
 take some time**::
 
@@ -103,11 +103,11 @@ Reboot your system and check the iptables rules::
 
 .. _searxng lxc suite:
 
-SearXNG LXC suite
+SearXNG-SE LXC suite
 =================
 
-The intention of the *SearXNG LXC suite* is to build up a suite of containers
-for development tasks or :ref:`buildhosts <Setup SearXNG buildhost>` with a very
+The intention of the *SearXNG-SE LXC suite* is to build up a suite of containers
+for development tasks or :ref:`buildhosts <Setup SearXNG-SE buildhost>` with a very
 small set of simple commands.  At the end of the ``--help`` output the SearXNG
 suite from the :ref:`lxc-searxng.env` is introduced::
 
@@ -119,8 +119,8 @@ suite from the :ref:`lxc-searxng.env` is introduced::
      containers: searxng-ubu2004 searxng-ubu2204 searxng-fedora35 searxng-archlinux
 
 As shown above there are images and containers build up on this images.  To show
-more info about the containers in the *SearXNG LXC suite* call ``show suite``.
-If this is the first time you make use of the SearXNG LXC suite, no containers
+more info about the containers in the *SearXNG-SE LXC suite* call ``show suite``.
+If this is the first time you make use of the SearXNG-SE LXC suite, no containers
 are installed and the output is::
 
   $ sudo -H ./utils/lxc.sh show suite
@@ -204,7 +204,7 @@ Install suite
    - :ref:`working in containers`
    - :ref:`FORCE_TIMEOUT <FORCE_TIMEOUT>`
 
-To install the complete :ref:`SearXNG suite <lxc-searxng.env>` into **all** LXC_
+To install the complete :ref:`SearXNG-SE suite <lxc-searxng.env>` into **all** LXC_
 containers leave the container argument empty and run::
 
   $ sudo -H ./utils/lxc.sh build
@@ -215,7 +215,7 @@ To *build & install* suite only in one container you can use by example::
   $ sudo -H ./utils/lxc.sh build searxng-archlinux
   $ sudo -H ./utils/lxc.sh install suite searxng-archlinux
 
-The command above installs a SearXNG suite (see :ref:`installation scripts`).
+The command above installs a SearXNG-SE suite (see :ref:`installation scripts`).
 To :ref:`install a nginx <installation nginx>` reverse proxy (or alternatively
 use :ref:`apache <installation apache>`)::
 
@@ -228,7 +228,7 @@ Same operation just in one container of the suite::
 The :ref:`FORCE_TIMEOUT <FORCE_TIMEOUT>` environment is set to zero to run the
 script without user interaction.
 
-To get the IP (URL) of the SearXNG service in the containers use ``show suite``
+To get the IP (URL) of the SearXNG-SE service in the containers use ``show suite``
 command.  To test instances from containers just open the URLs in your
 WEB-Browser::
 
@@ -249,12 +249,12 @@ If there comes the time you want to **get rid off all** the containers and
   $ sudo -H ./utils/lxc.sh remove images
 
 
-.. _Setup SearXNG buildhost:
+.. _Setup SearXNG-SE buildhost:
 
-Setup SearXNG buildhost
+Setup SearXNG-SE buildhost
 =======================
 
-You can **install the SearXNG buildhost environment** into one or all containers.
+You can **install the SearXNG-SE buildhost environment** into one or all containers.
 The installation procedure to set up a :ref:`build host<buildhosts>` takes its
 time.  Installation in all containers will take more time (time for another cup
 of coffee). ::
@@ -286,10 +286,10 @@ The ``--help`` output of the script is largely self-explanatory:
 
 .. _lxc-searxng.env:
 
-SearXNG suite config
+SearXNG-SE suite config
 ====================
 
-The SearXNG suite is defined in the file :origin:`utils/lxc-searxng.env`:
+The SearXNG-SE suite is defined in the file :origin:`utils/lxc-searxng.env`:
 
 .. literalinclude:: ../../utils/lxc-searxng.env
    :language: bash

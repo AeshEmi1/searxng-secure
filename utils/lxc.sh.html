@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>utils/lxc.sh &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>utils/lxc.sh &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../_static/searxng.css?v=52e4ff28" />
     <script src="../_static/documentation_options.js?v=537f2c43"></script>
@@ -32,7 +32,7 @@
         <li class="right" >
           <a href="searxng.sh.html" title="utils/searxng.sh"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">DevOps tooling box</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="docutils literal notranslate"><span class="pre">utils/lxc.sh</span></code></a></li> 
       </ul>
@@ -46,7 +46,7 @@
   <section id="utils-lxc-sh">
 <span id="lxc-sh"></span><h1><code class="docutils literal notranslate"><span class="pre">utils/lxc.sh</span></code><a class="headerlink" href="#utils-lxc-sh" title="Link to this heading">¶</a></h1>
 <p>With the use of <em>Linux Containers</em> (<a class="reference external" href="https://linuxcontainers.org/lxc/introduction/">LXC</a>) we can scale our tasks over a stack of
-containers, what we call the: <em>lxc suite</em>.  The <a class="reference internal" href="#lxc-searxng-env"><span class="std std-ref">SearXNG suite config</span></a> is
+containers, what we call the: <em>lxc suite</em>.  The <a class="reference internal" href="#lxc-searxng-env"><span class="std std-ref">SearXNG-SE suite config</span></a> is
 loaded by default, every time you start the <code class="docutils literal notranslate"><span class="pre">lxc.sh</span></code> script (<em>you do not need
 to care about</em>).</p>
 <aside class="sidebar">
@@ -65,7 +65,7 @@ to care about</em>).</p>
 <li><p><a class="reference internal" href="#internet-connectivity-docker" id="id6">Internet Connectivity &amp; Docker</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#searxng-lxc-suite" id="id7">SearXNG LXC suite</a></p>
+<li><p><a class="reference internal" href="#searxng-lxc-suite" id="id7">SearXNG-SE LXC suite</a></p>
 <ul>
 <li><p><a class="reference internal" href="#running-commands" id="id8">Running commands</a></p></li>
 <li><p><a class="reference internal" href="#good-to-know" id="id9">Good to know</a></p></li>
@@ -73,9 +73,9 @@ to care about</em>).</p>
 <li><p><a class="reference internal" href="#clean-up" id="id11">Clean up</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#setup-searxng-buildhost" id="id12">Setup SearXNG buildhost</a></p></li>
+<li><p><a class="reference internal" href="#setup-searxng-buildhost" id="id12">Setup SearXNG-SE buildhost</a></p></li>
 <li><p><a class="reference internal" href="#command-help" id="id13">Command Help</a></p></li>
-<li><p><a class="reference internal" href="#searxng-suite-config" id="id14">SearXNG suite config</a></p></li>
+<li><p><a class="reference internal" href="#searxng-suite-config" id="id14">SearXNG-SE suite config</a></p></li>
 </ul>
 </nav>
 <section id="install-lxd">
@@ -86,7 +86,7 @@ once:</p>
 $ lxd init --auto
 </pre></div>
 </div>
-<p>To make use of the containers from the <em>SearXNG suite</em>, you have to build the
+<p>To make use of the containers from the <em>SearXNG-SE suite</em>, you have to build the
 <a class="reference internal" href="#lxc-sh-help"><span class="std std-ref">LXC suite containers</span></a> initial.  But be warned, <strong>this might
 take some time</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo -H ./utils/lxc.sh build
@@ -141,11 +141,11 @@ and insert the following lines:</p>
 </section>
 </section>
 <section id="searxng-lxc-suite">
-<span id="id2"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">SearXNG LXC suite</a><a class="headerlink" href="#searxng-lxc-suite" title="Link to this heading">¶</a></h2>
-<p>The intention of the <em>SearXNG LXC suite</em> is to build up a suite of containers
+<span id="id2"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">SearXNG-SE LXC suite</a><a class="headerlink" href="#searxng-lxc-suite" title="Link to this heading">¶</a></h2>
+<p>The intention of the <em>SearXNG-SE LXC suite</em> is to build up a suite of containers
 for development tasks or <a class="reference internal" href="#setup-searxng-buildhost"><span class="std std-ref">buildhosts</span></a> with a very
 small set of simple commands.  At the end of the <code class="docutils literal notranslate"><span class="pre">--help</span></code> output the SearXNG
-suite from the <a class="reference internal" href="#lxc-searxng-env"><span class="std std-ref">SearXNG suite config</span></a> is introduced:</p>
+suite from the <a class="reference internal" href="#lxc-searxng-env"><span class="std std-ref">SearXNG-SE suite config</span></a> is introduced:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo -H ./utils/lxc.sh --help
 ...
 LXC suite: searxng
@@ -155,8 +155,8 @@ LXC suite: searxng
 </pre></div>
 </div>
 <p>As shown above there are images and containers build up on this images.  To show
-more info about the containers in the <em>SearXNG LXC suite</em> call <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">suite</span></code>.
-If this is the first time you make use of the SearXNG LXC suite, no containers
+more info about the containers in the <em>SearXNG-SE LXC suite</em> call <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">suite</span></code>.
+If this is the first time you make use of the SearXNG-SE LXC suite, no containers
 are installed and the output is:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo -H ./utils/lxc.sh show suite
 
@@ -235,7 +235,7 @@ different to HOST system).</p>
 <li><p><a class="reference internal" href="index.html#force-timeout"><span class="std std-ref">FORCE_TIMEOUT</span></a></p></li>
 </ul>
 </aside>
-<p>To install the complete <a class="reference internal" href="#lxc-searxng-env"><span class="std std-ref">SearXNG suite</span></a> into <strong>all</strong> <a class="reference external" href="https://linuxcontainers.org/lxc/introduction/">LXC</a>
+<p>To install the complete <a class="reference internal" href="#lxc-searxng-env"><span class="std std-ref">SearXNG-SE suite</span></a> into <strong>all</strong> <a class="reference external" href="https://linuxcontainers.org/lxc/introduction/">LXC</a>
 containers leave the container argument empty and run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo -H ./utils/lxc.sh build
 $ sudo -H ./utils/lxc.sh install suite
@@ -246,7 +246,7 @@ $ sudo -H ./utils/lxc.sh install suite
 $ sudo -H ./utils/lxc.sh install suite searxng-archlinux
 </pre></div>
 </div>
-<p>The command above installs a SearXNG suite (see <a class="reference internal" href="../admin/installation-scripts.html#installation-scripts"><span class="std std-ref">Installation Script</span></a>).
+<p>The command above installs a SearXNG-SE suite (see <a class="reference internal" href="../admin/installation-scripts.html#installation-scripts"><span class="std std-ref">Installation Script</span></a>).
 To <a class="reference internal" href="../admin/installation-nginx.html#installation-nginx"><span class="std std-ref">install a nginx</span></a> reverse proxy (or alternatively
 use <a class="reference internal" href="../admin/installation-apache.html#installation-apache"><span class="std std-ref">apache</span></a>):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo -H ./utils/lxc.sh cmd -- FORCE_TIMEOUT=0 ./utils/searxng.sh install nginx
@@ -258,7 +258,7 @@ use <a class="reference internal" href="../admin/installation-apache.html#instal
 </div>
 <p>The <a class="reference internal" href="index.html#force-timeout"><span class="std std-ref">FORCE_TIMEOUT</span></a> environment is set to zero to run the
 script without user interaction.</p>
-<p>To get the IP (URL) of the SearXNG service in the containers use <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">suite</span></code>
+<p>To get the IP (URL) of the SearXNG-SE service in the containers use <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">suite</span></code>
 command.  To test instances from containers just open the URLs in your
 WEB-Browser:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo ./utils/lxc.sh show suite | grep SEARXNG_URL
@@ -281,8 +281,8 @@ $ sudo -H ./utils/lxc.sh remove images
 </section>
 </section>
 <section id="setup-searxng-buildhost">
-<span id="id4"></span><h2><a class="toc-backref" href="#id12" role="doc-backlink">Setup SearXNG buildhost</a><a class="headerlink" href="#setup-searxng-buildhost" title="Link to this heading">¶</a></h2>
-<p>You can <strong>install the SearXNG buildhost environment</strong> into one or all containers.
+<span id="id4"></span><h2><a class="toc-backref" href="#id12" role="doc-backlink">Setup SearXNG-SE buildhost</a><a class="headerlink" href="#setup-searxng-buildhost" title="Link to this heading">¶</a></h2>
+<p>You can <strong>install the SearXNG-SE buildhost environment</strong> into one or all containers.
 The installation procedure to set up a <a class="reference internal" href="../admin/buildhosts.html#buildhosts"><span class="std std-ref">build host</span></a> takes its
 time.  Installation in all containers will take more time (time for another cup
 of coffee).</p>
@@ -346,8 +346,8 @@ LXC suite: searxng
 </div>
 </section>
 <section id="searxng-suite-config">
-<span id="lxc-searxng-env"></span><h2><a class="toc-backref" href="#id14" role="doc-backlink">SearXNG suite config</a><a class="headerlink" href="#searxng-suite-config" title="Link to this heading">¶</a></h2>
-<p>The SearXNG suite is defined in the file <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/utils/lxc-searxng.env">git://utils/lxc-searxng.env</a>:</p>
+<span id="lxc-searxng-env"></span><h2><a class="toc-backref" href="#id14" role="doc-backlink">SearXNG-SE suite config</a><a class="headerlink" href="#searxng-suite-config" title="Link to this heading">¶</a></h2>
+<p>The SearXNG-SE suite is defined in the file <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/utils/lxc-searxng.env">git://utils/lxc-searxng.env</a>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8; mode: sh indent-tabs-mode: nil -*-</span>
 <span class="c1"># SPDX-License-Identifier: AGPL-3.0-or-later</span>
 <span class="c1"># shellcheck shell=bash</span>
@@ -450,16 +450,16 @@ lxc_suite_info<span class="o">()</span><span class="w"> </span><span class="o">{
 <li class="toctree-l4"><a class="reference internal" href="#internet-connectivity-docker">Internet Connectivity &amp; Docker</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#searxng-lxc-suite">SearXNG LXC suite</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#searxng-lxc-suite">SearXNG-SE LXC suite</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#running-commands">Running commands</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#good-to-know">Good to know</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#install-suite">Install suite</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#clean-up">Clean up</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#setup-searxng-buildhost">Setup SearXNG buildhost</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup-searxng-buildhost">Setup SearXNG-SE buildhost</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#command-help">Command Help</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#searxng-suite-config">SearXNG suite config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#searxng-suite-config">SearXNG-SE suite config</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#common-command-environments">Common command environments</a></li>
@@ -511,7 +511,7 @@ lxc_suite_info<span class="o">()</span><span class="w"> </span><span class="o">{
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

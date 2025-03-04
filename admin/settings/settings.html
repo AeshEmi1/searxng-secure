@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>settings.yml &#8212; SearXNG Documentation (2025.3.2+8984d7ae0)</title>
+    <title>settings.yml &#8212; SearXNG-SE Documentation (2025.3.2+8984d7ae0)</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=6625fa76" />
     <link rel="stylesheet" type="text/css" href="../../_static/searxng.css?v=52e4ff28" />
     <script src="../../_static/documentation_options.js?v=537f2c43"></script>
@@ -32,7 +32,7 @@
         <li class="right" >
           <a href="index.html" title="Settings"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">SearXNG Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">SearXNG-SE Documentation (2025.3.2+8984d7ae0)</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../index.html" >Administrator documentation</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Settings</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href=""><code class="docutils literal notranslate"><span class="pre">settings.yml</span></code></a></li> 
@@ -68,7 +68,7 @@ file.</p>
 <li><p>the full path specified in the <code class="docutils literal notranslate"><span class="pre">SEARXNG_SETTINGS_PATH</span></code> environment variable.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">/etc/searxng/settings.yml</span></code></p></li>
 </ol>
-<p>If these files don’t exist (or are empty or can’t be read), SearXNG uses the
+<p>If these files don’t exist (or are empty or can’t be read), SearXNG-SE uses the
 <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/searx/settings.yml">git://searx/settings.yml</a> file.  Read <a class="reference internal" href="#settings-use-default-settings"><span class="std std-ref">use_default_settings</span></a> to
 see how you can simplify your <em>user defined</em> <code class="docutils literal notranslate"><span class="pre">settings.yml</span></code>.</p>
 </section>
@@ -100,7 +100,7 @@ the <code class="docutils literal notranslate"><span class="pre">bind_address</s
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">engines:</span></code></dt><dd><p>With <code class="docutils literal notranslate"><span class="pre">use_default_settings:</span> <span class="pre">true</span></code>, each settings can be override in a
 similar way, the <code class="docutils literal notranslate"><span class="pre">engines</span></code> section is merged according to the engine
-<code class="docutils literal notranslate"><span class="pre">name</span></code>.  In this example, SearXNG will load all the default engines, will
+<code class="docutils literal notranslate"><span class="pre">name</span></code>.  In this example, SearXNG-SE will load all the default engines, will
 enable the <code class="docutils literal notranslate"><span class="pre">bing</span></code> engine and define a <a class="reference internal" href="settings_engines.html#private-engines"><span class="std std-ref">token</span></a> for
 the arch linux engine:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">use_default_settings</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
@@ -115,7 +115,7 @@ the arch linux engine:</p>
 </div>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">engines:</span></code> / <code class="docutils literal notranslate"><span class="pre">remove:</span></code></dt><dd><p>It is possible to remove some engines from the default settings. The following
-example is similar to the above one, but SearXNG doesn’t load the the google
+example is similar to the above one, but SearXNG-SE doesn’t load the the google
 engine:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">use_default_settings</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">engines</span><span class="p">:</span>
@@ -130,7 +130,7 @@ engine:</p>
 </div>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">engines:</span></code> / <code class="docutils literal notranslate"><span class="pre">keep_only:</span></code></dt><dd><p>As an alternative, it is possible to specify the engines to keep. In the
-following example, SearXNG has only two engines:</p>
+following example, SearXNG-SE has only two engines:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">use_default_settings</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">engines</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">keep_only</span><span class="p">:</span>
@@ -195,7 +195,7 @@ following example, SearXNG has only two engines:</p>
 <li class="toctree-l2"><a class="reference internal" href="../installation-uwsgi.html">uWSGI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../installation-nginx.html">NGINX</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../installation-apache.html">Apache</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../update-searxng.html">SearXNG maintenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../update-searxng.html">SearXNG-SE maintenance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../answer-captcha.html">Answer CAPTCHA from server’s IP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../searx.favicons.html">Favicons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../searx.limiter.html">Limiter</a></li>
@@ -256,7 +256,7 @@ following example, SearXNG has only two engines:</p>
       <div class="clearer"></div>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright SearXNG team.
+    &#169; Copyright SearXNG-SE team.
     </div>
   </body>
 </html>

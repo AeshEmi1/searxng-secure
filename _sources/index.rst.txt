@@ -6,12 +6,12 @@ Welcome to SearXNG
 
 .. jinja:: searx
 
-   SearXNG is a free internet metasearch engine which aggregates results from up
+   SearXNG-SE is a free internet metasearch engine which aggregates results from up
    to {{engines | length}} :ref:`search services <configured engines>`.  Users
-   are neither tracked nor profiled.  Additionally, SearXNG can be used over Tor
+   are neither tracked nor profiled.  Additionally, SearXNG-SE can be used over Tor
    for online anonymity.
 
-Get started with SearXNG by using one of the instances listed at searx.space_.
+Get started with SearXNG-SE by using one of the instances listed at searx.space_.
 If you don't trust anyone, you can set up your own, see :ref:`installation`.
 
 .. jinja:: searx
@@ -19,7 +19,7 @@ If you don't trust anyone, you can set up your own, see :ref:`installation`.
    .. sidebar::  features
 
       - :ref:`self hosted <installation>`
-      - :ref:`no user tracking / no profiling <SearXNG protect privacy>`
+      - :ref:`no user tracking / no profiling <SearXNG-SE protect privacy>`
       - script & cookies are optional
       - secure, encrypted connections
       - :ref:`{{engines | length}} search engines <configured engines>`
@@ -32,7 +32,7 @@ If you don't trust anyone, you can set up your own, see :ref:`installation`.
 
 .. sidebar:: be a part
 
-   SearXNG is driven by an open community, come join us!  Don't hesitate, no
+   SearXNG-SE is driven by an open community, come join us!  Don't hesitate, no
    need to be an *expert*, everyone can contribute:
 
    - `help to improve translations <https://translate.codeberg.org/projects/searxng/searxng/>`_
@@ -42,7 +42,7 @@ If you don't trust anyone, you can set up your own, see :ref:`installation`.
 
 .. sidebar:: the origin
 
-   SearXNG development has been started in the middle of 2021 as a fork of the
+   SearXNG-SE development has been started in the middle of 2021 as a fork of the
    searx project.
 
 
