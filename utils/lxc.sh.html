@@ -207,7 +207,7 @@ INFO:  [searxng-archlinux] pwd
 /share/SearXNG
 </pre></div>
 </div>
-<p>The path <code class="docutils literal notranslate"><span class="pre">/share/SearXNG</span></code> will be different on your HOST system.  The commands
+<p>The path <code class="docutils literal notranslate"><span class="pre">/share/SearXNG-SE</span></code> will be different on your HOST system.  The commands
 in the container are executed by the <code class="docutils literal notranslate"><span class="pre">root</span></code> inside of the container.  Compare
 output of:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ls -li Makefile
@@ -219,7 +219,7 @@ INFO:  [searxng-archlinux] ls -li Makefile
 ...
 </pre></div>
 </div>
-<p>Since the path <code class="docutils literal notranslate"><span class="pre">/share/SearXNG</span></code> of the HOST system is wrapped into the
+<p>Since the path <code class="docutils literal notranslate"><span class="pre">/share/SearXNG-SE</span></code> of the HOST system is wrapped into the
 container under the same name, the shown <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> (inode <code class="docutils literal notranslate"><span class="pre">47712402</span></code>) in
 the output is always the identical <code class="docutils literal notranslate"><span class="pre">/share/SearXNG/Makefile</span></code> from the HOST
 system.  In the example shown above the owner of the path in the container is
@@ -382,7 +382,7 @@ lxc_suite_install_info<span class="o">()</span><span class="w"> </span><span cla
 <span class="w">        </span>lxc_set_suite_env
 <span class="w">        </span>cat<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
 <span class="s">LXC suite: ${LXC_SUITE_NAME}</span>
-<span class="s">  Suite includes installation of SearXNG</span>
+<span class="s">  Suite includes installation of SearXNG-SE</span>
 <span class="s">  images:     ${LOCAL_IMAGES[*]}</span>
 <span class="s">  containers: ${CONTAINERS[*]}</span>
 <span class="s">EOF</span>
@@ -433,7 +433,7 @@ lxc_suite_info<span class="o">()</span><span class="w"> </span><span class="o">{
   
     
             <p class="logo"><a href="../index.html">
-              <img class="logo" src="../_static/searxng-wordmark.svg" alt="Logo of SearXNG"/>
+              <img class="logo" src="../_static/searxng-wordmark.svg" alt="Logo of SearXNG-SE"/>
             </a></p>
   
 

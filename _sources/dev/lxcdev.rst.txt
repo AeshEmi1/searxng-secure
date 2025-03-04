@@ -401,7 +401,7 @@ To wrap the suite into a developer one answer ``YES`` (or press Enter).
    =========================================
 
    mv -f "/usr/local/searxng/searxng-src" "/usr/local/searxng/searxng-src.backup"
-   ln -s "/share/SearXNG" "/usr/local/searxng/searxng-src"
+   ln -s "/share/SearXNG-SE" "/usr/local/searxng/searxng-src"
    ls -ld /usr/local/searxng/searxng-src
      |searxng| lrwxrwxrwx 1 searxng searxng ... /usr/local/searxng/searxng-src -> /share/SearXNG
 

@@ -82,7 +82,7 @@ ini file</a> per uWSGI-app placed at dedicated locations.  Take archlinux and a
         <span class="n">contains</span><span class="p">:</span> <span class="p">[</span><span class="n">Service</span><span class="p">]</span>
                   <span class="n">ExecStart</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">uwsgi</span> <span class="o">--</span><span class="n">ini</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">/%</span><span class="n">I</span><span class="o">.</span><span class="n">ini</span>
 
-<span class="n">SearXNG</span> <span class="n">application</span><span class="p">:</span>   <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">/</span><span class="n">searxng</span><span class="o">.</span><span class="n">ini</span>
+<span class="n">SearXNG-SE</span> <span class="n">application</span><span class="p">:</span>   <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">/</span><span class="n">searxng</span><span class="o">.</span><span class="n">ini</span>
         <span class="n">links</span> <span class="n">to</span><span class="p">:</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">/</span><span class="n">apps</span><span class="o">-</span><span class="n">available</span><span class="o">/</span><span class="n">searxng</span><span class="o">.</span><span class="n">ini</span>
 </pre></div>
 </div>
@@ -107,7 +107,7 @@ systemd unit.</p>
 (also know as <em>vassals</em>).  If a <em>vassal</em> is added, removed or the timestamp is
 modified, a corresponding action takes place: a new uWSGI instance is started,
 reload or stopped.  Take Fedora and a <code class="docutils literal notranslate"><span class="pre">searxng.ini</span></code> as example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">to</span> <span class="n">install</span> <span class="o">&amp;</span> <span class="n">start</span> <span class="n">SearXNG</span> <span class="n">instance</span> <span class="n">create</span> <span class="o">--&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">searxng</span><span class="o">.</span><span class="n">ini</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">to</span> <span class="n">install</span> <span class="o">&amp;</span> <span class="n">start</span> <span class="n">SearXNG-SE</span> <span class="n">instance</span> <span class="n">create</span> <span class="o">--&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">searxng</span><span class="o">.</span><span class="n">ini</span>
 <span class="n">to</span> <span class="n">reload</span> <span class="n">the</span> <span class="n">instance</span> <span class="n">edit</span> <span class="n">timestamp</span>      <span class="o">--&gt;</span> <span class="n">touch</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">searxng</span><span class="o">.</span><span class="n">ini</span>
 <span class="n">to</span> <span class="n">stop</span> <span class="n">instance</span> <span class="n">remove</span> <span class="n">ini</span>                <span class="o">--&gt;</span> <span class="n">rm</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">searxng</span><span class="o">.</span><span class="n">ini</span>
 </pre></div>
@@ -549,7 +549,7 @@ Groups:
   
     
             <p class="logo"><a href="../index.html">
-              <img class="logo" src="../_static/searxng-wordmark.svg" alt="Logo of SearXNG"/>
+              <img class="logo" src="../_static/searxng-wordmark.svg" alt="Logo of SearXNG-SE"/>
             </a></p>
   
 
