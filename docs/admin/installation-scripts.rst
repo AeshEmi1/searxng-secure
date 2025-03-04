@@ -29,7 +29,7 @@ alternatively you can create your own fork and clone from there.
 
    - :ref:`inspect searxng`
 
-To install a SearXNG :ref:`reference setup <use_default_settings.yml>`
+To install a SearXNG-SE :ref:`reference setup <use_default_settings.yml>`
 including a :ref:`uWSGI setup <architecture uWSGI>` as described in the
 :ref:`installation basic` and in the :ref:`searxng uwsgi` section type:
 
@@ -42,7 +42,7 @@ including a :ref:`uWSGI setup <architecture uWSGI>` as described in the
    For the installation procedure, use a *sudoer* login to run the scripts.  If
    you install from ``root``, take into account that the scripts are creating a
    ``searxng`` user.  In the installation procedure this new created user does
-   need to have read access to the cloned SearXNG repository, which is not the case if you clone
+   need to have read access to the cloned SearXNG-SE repository, which is not the case if you clone
    it into a folder below ``/root``!
 
 .. sidebar:: further read
@@ -51,7 +51,7 @@ including a :ref:`uWSGI setup <architecture uWSGI>` as described in the
 
 .. _caddy: https://hub.docker.com/_/caddy
 
-When all services are installed and running fine, you can add SearXNG to your
+When all services are installed and running fine, you can add SearXNG-SE to your
 HTTP server.  We do not have any preferences regarding the HTTP server, you can use
 whatever you prefer.
 

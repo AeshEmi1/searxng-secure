@@ -40,9 +40,9 @@ Apache
     https://httpd.apache.org/docs/current/mod/mod_proxy.html
 
 
-This section explains how to set up a SearXNG instance using the HTTP server Apache_.
+This section explains how to set up a SearXNG-SE instance using the HTTP server Apache_.
 If you did use the :ref:`installation scripts` and do not have any special preferences
-you can install the :ref:`SearXNG site <apache searxng site>` using
+you can install the :ref:`SearXNG-SE site <apache searxng site>` using
 :ref:`searxng.sh <searxng.sh overview>`:
 
 .. code:: bash
@@ -305,7 +305,7 @@ Apache sites
 
 .. _apache searxng site:
 
-Apache's SearXNG site
+Apache's SearXNG-SE site
 =====================
 
 .. _mod_uwsgi: https://uwsgi-docs.readthedocs.io/en/latest/Apache.html#mod-uwsgi
@@ -314,7 +314,7 @@ Apache's SearXNG site
 
    Use mod_proxy_uwsgi_ / don't use the old mod_uwsgi_ anymore.
 
-To proxy the incoming requests to the SearXNG instance Apache needs the
+To proxy the incoming requests to the SearXNG-SE instance Apache needs the
 mod_proxy_ module (:ref:`apache modules`).
 
 .. sidebar:: HTTP headers
@@ -322,7 +322,7 @@ mod_proxy_ module (:ref:`apache modules`).
    With ProxyPreserveHost_ the incoming ``Host`` header is passed to the proxied
    host.
 
-Depending on what your SearXNG installation is listening on, you need a http
+Depending on what your SearXNG-SE installation is listening on, you need a http
 mod_proxy_http_) or socket (mod_proxy_uwsgi_) communication to upstream.
 
 The :ref:`installation scripts` installs the :ref:`reference setup
@@ -385,4 +385,4 @@ one of the lines and `restart apache`_:
 
 The ``CustomLog`` directive disables logs for the entire (virtual) server, use it
 when the URL of the service does not have a path component (``/searxng``), so when
-SearXNG is located at root (``/``).
+SearXNG-SE is located at root (``/``).

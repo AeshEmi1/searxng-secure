@@ -3,7 +3,7 @@ Answer CAPTCHA from server's IP
 ===============================
 
 With a SSH tunnel we can send requests from server's IP and solve a CAPTCHA that
-blocks requests from this IP.  If your SearXNG instance is hosted at
+blocks requests from this IP.  If your SearXNG-SE instance is hosted at
 ``example.org`` and your login is ``user`` you can setup a proxy simply by
 :man:`ssh`:
 

@@ -29,7 +29,7 @@
   Enables `cache busting`_ of static files.
 
 ``default_locale`` :
-  SearXNG interface language.  If blank, the locale is detected by using the
+  SearXNG-SE interface language.  If blank, the locale is detected by using the
   browser language.  If it doesn't work, or you are deploying a language
   specific instance of searx, a locale can be defined using an ISO language
   code, like ``fr``, ``en``, ``de``.
@@ -56,7 +56,7 @@
   - https://archive.today/
 
 ``default_theme`` :
-  Name of the theme you want to use by default on your SearXNG instance.
+  Name of the theme you want to use by default on your SearXNG-SE instance.
 
 ``theme_args.simple_style``:
   Style of simple theme: ``auto``, ``light``, ``dark``, ``black``

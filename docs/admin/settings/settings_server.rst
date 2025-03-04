@@ -24,10 +24,10 @@
        certificate_key_path: "certs/searxng.key"
 
 ``base_url`` : ``$SEARXNG_URL``
-  The base URL where SearXNG is deployed.  Used to create correct inbound links.
+  The base URL where SearXNG-SE is deployed.  Used to create correct inbound links.
 
 ``port`` & ``bind_address``: ``$SEARXNG_PORT`` & ``$SEARXNG_BIND_ADDRESS``
-  Port number and *bind address* of the SearXNG web application if you run it
+  Port number and *bind address* of the SearXNG-SE web application if you run it
   directly using ``python searx/webapp.py``.  Doesn't apply to a SearXNG
   services running behind a proxy and using socket communications.
 
@@ -51,7 +51,7 @@
 .. _image_proxy:
 
 ``image_proxy`` : ``$SEARXNG_IMAGE_PROXY``
-  Allow your instance of SearXNG of being able to proxy images.  Uses memory space.
+  Allow your instance of SearXNG-SE of being able to proxy images.  Uses memory space.
 
 .. _HTTP headers: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
 
@@ -59,14 +59,14 @@
   Set additional HTTP headers, see `#755 <https://github.com/searx/searx/issues/715>`__
 
 ``enable_tls`` :
-  Enables TLS for the SearXNG flask application. Used to encrypt traffic between 
-  the reverse proxy and uWSGI server that hosts the SearXNG flask application.
+  Enables TLS for the SearXNG-SE flask application. Used to encrypt traffic between 
+  the reverse proxy and uWSGI server that hosts the SearXNG-SE flask application.
 
 ``certificate_path`` :
-  This is the path (relative to /etc/searxng) to the SearXNG certificate. It is used 
-  by the SearXNG flask application if enable_tls is set to true.
+  This is the path (relative to /etc/searxng) to the SearXNG-SE certificate. It is used 
+  by the SearXNG-SE flask application if enable_tls is set to true.
 
 ``certificate_key_path`` :
   This is the path (relative to /etc/searxng) to the key used to create the 
-  SearXNG certificate. It is used by the SearXNG flask application if enable_tls is 
+  SearXNG-SE certificate. It is used by the SearXNG-SE flask application if enable_tls is 
   set to true.

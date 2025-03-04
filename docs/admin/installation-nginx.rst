@@ -19,9 +19,9 @@ NGINX
 .. _SCRIPT_NAME:
    https://werkzeug.palletsprojects.com/en/1.0.x/wsgi/#werkzeug.wsgi.get_script_name
 
-This section explains how to set up a SearXNG instance using the HTTP server nginx_.
+This section explains how to set up a SearXNG-SE instance using the HTTP server nginx_.
 If you have used the :ref:`installation scripts` and do not have any special preferences
-you can install the :ref:`SearXNG site <nginx searxng site>` using
+you can install the :ref:`SearXNG-SE site <nginx searxng site>` using
 :ref:`searxng.sh <searxng.sh overview>`:
 
 .. code:: bash
@@ -126,7 +126,7 @@ depends on the linux distribution:
 
 .. _nginx searxng site:
 
-NGINX's SearXNG site
+NGINX's SearXNG-SE site
 ====================
 
 Now you have to create a configuration file (``searxng.conf``) for the SearXNG
@@ -134,7 +134,7 @@ site.  If nginx_ is new to you, the `nginx beginners guide`_ is a good starting
 point and the `Getting Started wiki`_ is always a good resource *to keep in the
 pocket*.
 
-Depending on what your SearXNG installation is listening on, you need a http or socket
+Depending on what your SearXNG-SE installation is listening on, you need a http or socket
 communication to upstream.
 
 .. tabs::

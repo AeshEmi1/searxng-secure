@@ -8,7 +8,7 @@
 
    general:
      debug: false
-     instance_name:  "SearXNG"
+     instance_name:  "SearXNG-SE"
      privacypolicy_url: false
      donation_url: false
      contact_url: false

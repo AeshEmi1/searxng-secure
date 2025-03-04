@@ -121,7 +121,7 @@ ${fedora_build}
        pip install -U wheel
        pip install -U pyyaml
 
-       # jump to SearXNG's working tree and install SearXNG into virtualenv
+       # jump to SearXNG's working tree and install SearXNG-SE into virtualenv
        (${SERVICE_USER})$ cd \"$SEARXNG_SRC\"
        (${SERVICE_USER})$ pip install --use-pep517 --no-build-isolation -e .
 
