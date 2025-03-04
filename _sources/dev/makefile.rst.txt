@@ -202,7 +202,7 @@ and ``$BLACK_TARGETS`` in :origin:`Makefile`.
    to 23.1.0`_
 
 .. _Bump black from 22.12.0 to 23.1.0:
-   https://github.com/searxng/searxng/pull/2159#pullrequestreview-1284094735
+   https://github.com/AeshEmi1/searxng-se/pull/2159#pullrequestreview-1284094735
 
 .. _Black code style:
    https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html

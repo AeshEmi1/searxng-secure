@@ -78,7 +78,7 @@ Relational Database Management System (RDBMS) are supported:</p>
 <li><p><a class="reference internal" href="#engine-postgresql"><span class="std std-ref">PostgreSQL</span></a></p></li>
 <li><p><a class="reference internal" href="#engine-mysql-server"><span class="std std-ref">MySQL</span></a> &amp; <a class="reference internal" href="#engine-mariadb-server"><span class="std std-ref">MariaDB</span></a></p></li>
 </ul>
-<p>All of the engines above are just commented out in the <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/searx/settings.yml">settings.yml</a>, as you have to set the required attributes for the
+<p>All of the engines above are just commented out in the <a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/searx/settings.yml">settings.yml</a>, as you have to set the required attributes for the
 engines, e.g. <code class="docutils literal notranslate"><span class="pre">database:</span></code> …</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">...</span>
 <span class="w">  </span><span class="nt">engine</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nv">sqlite|postgresql|mysql_server</span><span class="p p-Indicator">}</span>
@@ -88,7 +88,7 @@ engines, e.g. <code class="docutils literal notranslate"><span class="pre">datab
 </pre></div>
 </div>
 <p>By default, the engines use the <code class="docutils literal notranslate"><span class="pre">key-value</span></code> template for displaying results /
-see <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/searx/templates/simple/result_templates/key-value.html">simple</a>
+see <a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/searx/templates/simple/result_templates/key-value.html">simple</a>
 theme.  If you are not satisfied with the original result layout, you can use
 your own template, set <code class="docutils literal notranslate"><span class="pre">result_template</span></code> attribute to <code class="docutils literal notranslate"><span class="pre">{template_name}</span></code> and
 place the templates at:</p>
@@ -124,7 +124,7 @@ returned results use the option <code class="docutils literal notranslate"><span
 <aside class="sidebar">
 <p class="sidebar-title">info</p>
 <ul class="simple">
-<li><p><a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/searx/engines/sqlite.py">sqlite.py</a></p></li>
+<li><p><a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/searx/engines/sqlite.py">sqlite.py</a></p></li>
 </ul>
 </aside>
 <p id="module-searx.engines.sqlite">SQLite is a small, fast and reliable SQL database engine.  It does not require
@@ -189,7 +189,7 @@ mode creates an empty file on the file system.  See:</p>
 <aside class="sidebar">
 <p class="sidebar-title">info</p>
 <ul class="simple">
-<li><p><a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/searx/engines/postgresql.py">postgresql.py</a></p></li>
+<li><p><a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/searx/engines/postgresql.py">postgresql.py</a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> <a class="reference external" href="psycopg2">psycopg2-binary</a></p></li>
 </ul>
 </aside>
@@ -252,7 +252,7 @@ the PostgreSQL engine, you must install the dependency <code class="docutils lit
 <aside class="sidebar">
 <p class="sidebar-title">info</p>
 <ul class="simple">
-<li><p><a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/searx/engines/mysql_server.py">mysql_server.py</a></p></li>
+<li><p><a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/searx/engines/mysql_server.py">mysql_server.py</a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> <a class="extlink-pypi reference external" href="https://pypi.org/project/mysql-connector-python">mysql-connector-python</a></p></li>
 </ul>
 </aside>
@@ -318,7 +318,7 @@ attributes.  By default it is set to <code class="docutils literal notranslate">
 <aside class="sidebar">
 <p class="sidebar-title">info</p>
 <ul class="simple">
-<li><p><a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/searx/engines/mariadb_server.py">mariadb_server.py</a></p></li>
+<li><p><a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/searx/engines/mariadb_server.py">mariadb_server.py</a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> <a class="extlink-pypi reference external" href="https://pypi.org/project/mariadb">mariadb</a></p></li>
 </ul>
 </aside>
@@ -448,13 +448,13 @@ prerequities.</p>
 
   <h3>Project Links</h3>
   <ul>
-    <li><a href="https://github.com/searxng/searxng/tree/master">Source</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/tree/master">Source</a>
   
-    <li><a href="https://github.com/searxng/searxng/wiki">Wiki</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/wiki">Wiki</a>
   
     <li><a href="https://searx.space">Public instances</a>
   
-    <li><a href="https://github.com/searxng/searxng/issues">Issue Tracker</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/issues">Issue Tracker</a>
   </ul><h3>Navigation</h3>
 <ul>
   <li><a href="../../../index.html">Overview</a>

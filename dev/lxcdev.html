@@ -126,7 +126,7 @@ $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>searx
 <p>is the base of all our exercises here.</p>
 </aside>
 <p>The <a class="reference internal" href="../utils/lxc.sh.html#lxc-searxng-env"><span class="std std-ref">SearXNG-SE suite config</span></a> consists of several images, see <code class="docutils literal notranslate"><span class="pre">export</span>
-<span class="pre">LXC_SUITE=(...</span></code> near by <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/utils/lxc-searxng.env#L19">git://utils/lxc-searxng.env#L19</a>.
+<span class="pre">LXC_SUITE=(...</span></code> near by <a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/utils/lxc-searxng.env#L19">git://utils/lxc-searxng.env#L19</a>.
 For this blog post we exercise on a <a class="reference external" href="https://www.archlinux.org/">archlinux</a> image.  The container of this
 image is named <code class="docutils literal notranslate"><span class="pre">searxng-archlinux</span></code>.</p>
 <p>Lets build the container, but be sure that this container does not already
@@ -243,7 +243,7 @@ suite.  For this, we have to keep an eye on the <a class="reference internal" hr
 <p>With the command above, we stopped the SearXNG-SE uWSGI-App in the archlinux
 container.</p>
 <p>The uWSGI-App for the archlinux distros is configured in
-<a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/utils/templates/etc/uwsgi/apps-archlinux/searxng.ini">git://utils/templates/etc/uwsgi/apps-archlinux/searxng.ini</a>, from where at
+<a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/utils/templates/etc/uwsgi/apps-archlinux/searxng.ini">git://utils/templates/etc/uwsgi/apps-archlinux/searxng.ini</a>, from where at
 least you should attend the settings of <code class="docutils literal notranslate"><span class="pre">uid</span></code>, <code class="docutils literal notranslate"><span class="pre">chdir</span></code>, <code class="docutils literal notranslate"><span class="pre">env</span></code> and
 <code class="docutils literal notranslate"><span class="pre">http</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span> <span class="o">=</span> <span class="n">SEARXNG_SETTINGS_PATH</span><span class="o">=/</span><span class="n">etc</span><span class="o">/</span><span class="n">searxng</span><span class="o">/</span><span class="n">settings</span><span class="o">.</span><span class="n">yml</span>
@@ -418,13 +418,13 @@ use:</p>
 
   <h3>Project Links</h3>
   <ul>
-    <li><a href="https://github.com/searxng/searxng/tree/master">Source</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/tree/master">Source</a>
   
-    <li><a href="https://github.com/searxng/searxng/wiki">Wiki</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/wiki">Wiki</a>
   
     <li><a href="https://searx.space">Public instances</a>
   
-    <li><a href="https://github.com/searxng/searxng/issues">Issue Tracker</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/issues">Issue Tracker</a>
   </ul><h3>Navigation</h3>
 <ul>
   <li><a href="../index.html">Overview</a>

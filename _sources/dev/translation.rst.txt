@@ -6,7 +6,7 @@ Translation
 
 .. _translate.codeberg.org: https://translate.codeberg.org/projects/searxng/
 .. _Weblate: https://docs.weblate.org
-.. _translations branch: https://github.com/searxng/searxng/tree/translations
+.. _translations branch: https://github.com/AeshEmi1/searxng-se/tree/translations
 .. _orphan branch: https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt---orphanltnewbranchgt
 .. _Weblate repository: https://translate.codeberg.org/projects/searxng/searxng/#repository
 .. _wlc: https://docs.weblate.org/en/latest/wlc.html

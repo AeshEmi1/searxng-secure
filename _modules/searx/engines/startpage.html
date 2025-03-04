@@ -132,7 +132,7 @@
 <span class="kn">import</span><span class="w"> </span><span class="nn">babel.localedata</span>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">searx.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">extr</span><span class="p">,</span> <span class="n">extract_text</span><span class="p">,</span> <span class="n">eval_xpath</span><span class="p">,</span> <span class="n">gen_useragent</span><span class="p">,</span> <span class="n">html_to_text</span><span class="p">,</span> <span class="n">humanize_bytes</span><span class="p">,</span> <span class="n">remove_pua_from_str</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">searx.network</span><span class="w"> </span><span class="kn">import</span> <span class="n">get</span>  <span class="c1"># see https://github.com/searxng/searxng/issues/762</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">searx.network</span><span class="w"> </span><span class="kn">import</span> <span class="n">get</span>  <span class="c1"># see https://github.com/AeshEmi1/searxng-se/issues/762</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">searx.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="n">SearxEngineCaptchaException</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">searx.locales</span><span class="w"> </span><span class="kn">import</span> <span class="n">region_tag</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">searx.enginelib.traits</span><span class="w"> </span><span class="kn">import</span> <span class="n">EngineTraits</span>
@@ -269,7 +269,7 @@
     <span class="k">try</span><span class="p">:</span>
         <span class="n">sc_code</span> <span class="o">=</span> <span class="n">eval_xpath</span><span class="p">(</span><span class="n">dom</span><span class="p">,</span> <span class="n">search_form_xpath</span> <span class="o">+</span> <span class="s1">&#39;//input[@name=&quot;sc&quot;]/@value&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">except</span> <span class="ne">IndexError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;suspend startpage API --&gt; https://github.com/searxng/searxng/pull/695&quot;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;suspend startpage API --&gt; https://github.com/AeshEmi1/searxng-se/pull/695&quot;</span><span class="p">)</span>
         <span class="k">raise</span> <span class="n">SearxEngineCaptchaException</span><span class="p">(</span>
             <span class="n">message</span><span class="o">=</span><span class="s2">&quot;get_sc_code: [PR-695] query new sc time-stamp failed! (</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">resp</span><span class="o">.</span><span class="n">url</span><span class="p">,</span>  <span class="c1"># type: ignore</span>
         <span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">exc</span>
@@ -604,13 +604,13 @@
 
   <h3>Project Links</h3>
   <ul>
-    <li><a href="https://github.com/searxng/searxng/tree/master">Source</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/tree/master">Source</a>
   
-    <li><a href="https://github.com/searxng/searxng/wiki">Wiki</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/wiki">Wiki</a>
   
     <li><a href="https://searx.space">Public instances</a>
   
-    <li><a href="https://github.com/searxng/searxng/issues">Issue Tracker</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/issues">Issue Tracker</a>
   </ul><h3>Navigation</h3>
 <ul>
   <li><a href="../../../index.html">Overview</a>

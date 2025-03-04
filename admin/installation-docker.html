@@ -50,7 +50,7 @@
 <p class="sidebar-title">info</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://hub.docker.com/r/searxng/searxng">searxng/searxng &#64;dockerhub</a></p></li>
-<li><p><a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/Dockerfile">git://Dockerfile</a></p></li>
+<li><p><a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/Dockerfile">git://Dockerfile</a></p></li>
 <li><p><a class="reference external" href="https://docs.docker.com/get-started/overview">Docker overview</a></p></li>
 <li><p><a class="reference external" href="https://docs.docker.com/get-started/docker_cheatsheet.pdf">Docker Cheat Sheet</a></p></li>
 <li><p><a class="reference external" href="https://alpinelinux.org">Alpine Linux</a>
@@ -105,7 +105,7 @@ detached container</p></li>
 mount volume <code class="docutils literal notranslate"><span class="pre">HOST:CONTAINER</span></code></p></li>
 </ul>
 </aside>
-<p>The docker image is based on <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/Dockerfile">git://Dockerfile</a> and available from
+<p>The docker image is based on <a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/Dockerfile">git://Dockerfile</a> and available from
 <a class="reference external" href="https://hub.docker.com/r/searxng/searxng">searxng/searxng &#64;dockerhub</a>.  Using the docker image is quite easy, for
 instance you can pull the <a class="reference external" href="https://hub.docker.com/r/searxng/searxng">searxng/searxng &#64;dockerhub</a> image and deploy a local
 instance using <a class="reference external" href="https://docs.docker.com/engine/reference/run/">docker run</a>:</p>
@@ -168,7 +168,7 @@ $<span class="w"> </span>docker<span class="w"> </span>rmi<span class="w"> </spa
 <p>Like in many other distributions, Alpine’s <a class="reference external" href="https://wiki.ubuntu.com/DashAsBinSh">/bin/sh</a> is <a class="extlink-man reference external" href="https://manpages.debian.org/jump?q=dash">dash</a>.  Dash is meant to be
 <a class="reference external" href="https://pubs.opengroup.org/onlinepubs/9699919799">POSIX-compliant</a>.
 Compared to debian, in the Alpine image <a class="extlink-man reference external" href="https://manpages.debian.org/jump?q=bash">bash</a> is not installed.  The
-<a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/dockerfiles/docker-entrypoint.sh">git://dockerfiles/docker-entrypoint.sh</a> script is checked <em>against dash</em>
+<a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/dockerfiles/docker-entrypoint.sh">git://dockerfiles/docker-entrypoint.sh</a> script is checked <em>against dash</em>
 (<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">tests.shell</span></code>).</p>
 <p>To open a shell inside the container:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>2f998<span class="w"> </span>sh
@@ -178,7 +178,7 @@ Compared to debian, in the Alpine image <a class="extlink-man reference external
 </section>
 <section id="build-the-image">
 <h2>Build the image<a class="headerlink" href="#build-the-image" title="Link to this heading">¶</a></h2>
-<p>It’s also possible to build SearXNG-SE from the embedded <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/Dockerfile">git://Dockerfile</a>:</p>
+<p>It’s also possible to build SearXNG-SE from the embedded <a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/Dockerfile">git://Dockerfile</a>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/searxng/searxng.git
 $ cd searxng
 $ make docker.build
@@ -201,8 +201,8 @@ alpine            3.13                       6dbb9cc54074   3 weeks ago      5.6
 <p class="sidebar-title">docker run</p>
 <p>Use flags <code class="docutils literal notranslate"><span class="pre">-it</span></code> for <a class="reference external" href="https://docs.docker.com/engine/reference/run/#foreground">interactive processes</a>.</p>
 </aside>
-<p>In the <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/Dockerfile">git://Dockerfile</a> the <a class="reference external" href="https://docs.docker.com/engine/reference/builder/#entrypoint">ENTRYPOINT</a> is defined as
-<a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/dockerfiles/docker-entrypoint.sh">git://dockerfiles/docker-entrypoint.sh</a></p>
+<p>In the <a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/Dockerfile">git://Dockerfile</a> the <a class="reference external" href="https://docs.docker.com/engine/reference/builder/#entrypoint">ENTRYPOINT</a> is defined as
+<a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/dockerfiles/docker-entrypoint.sh">git://dockerfiles/docker-entrypoint.sh</a></p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>-it<span class="w"> </span>searxng/searxng<span class="w"> </span>-h
 </pre></div>
 </div>
@@ -282,13 +282,13 @@ Volume:
 
   <h3>Project Links</h3>
   <ul>
-    <li><a href="https://github.com/searxng/searxng/tree/master">Source</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/tree/master">Source</a>
   
-    <li><a href="https://github.com/searxng/searxng/wiki">Wiki</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/wiki">Wiki</a>
   
     <li><a href="https://searx.space">Public instances</a>
   
-    <li><a href="https://github.com/searxng/searxng/issues">Issue Tracker</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/issues">Issue Tracker</a>
   </ul><h3>Navigation</h3>
 <ul>
   <li><a href="../index.html">Overview</a>

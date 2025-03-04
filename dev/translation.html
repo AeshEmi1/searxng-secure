@@ -50,7 +50,7 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="../src/searx.babel_extract.html#searx-babel-extract"><span class="std std-ref">Custom message extractor (i18n)</span></a></p></li>
 <li><p><a class="reference external" href="https://docs.weblate.org">Weblate</a></p></li>
-<li><p>SearXNG-SE <a class="reference external" href="https://github.com/searxng/searxng/tree/translations">translations branch</a></p></li>
+<li><p>SearXNG-SE <a class="reference external" href="https://github.com/AeshEmi1/searxng-se/tree/translations">translations branch</a></p></li>
 <li><p>SearXNG-SE <a class="reference external" href="https://translate.codeberg.org/projects/searxng/searxng/#repository">Weblate repository</a></p></li>
 <li><p>Weblate Client: <a class="reference external" href="https://docs.weblate.org/en/latest/wlc.html">wlc</a></p></li>
 <li><p>Babel Command-Line: <a class="reference external" href="http://babel.pocoo.org/en/latest/cmdline.html">pybabel</a></p></li>
@@ -65,9 +65,9 @@ located at <code class="docutils literal notranslate"><span class="pre">https://
 care of the synchronization with the <em>origin</em>.  To avoid merging commits from
 the counterpart directly on the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of <em>SearXNG-SE origin</em>, a <em>pull
 request</em> (PR) is created by this workflow.</p>
-<p>Weblate monitors the <a class="reference external" href="https://github.com/searxng/searxng/tree/translations">translations branch</a>, not the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch.  This
+<p>Weblate monitors the <a class="reference external" href="https://github.com/AeshEmi1/searxng-se/tree/translations">translations branch</a>, not the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch.  This
 branch is an <a class="reference external" href="https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt---orphanltnewbranchgt">orphan branch</a>, decoupled from the master branch (we already know
-orphan branches from the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>).  The <a class="reference external" href="https://github.com/searxng/searxng/tree/translations">translations branch</a> contains
+orphan branches from the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>).  The <a class="reference external" href="https://github.com/AeshEmi1/searxng-se/tree/translations">translations branch</a> contains
 only the</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">translation/messages.pot</span></code> and the</p></li>
@@ -81,9 +81,9 @@ only the</p>
 </figure>
 <dl class="simple">
 <dt>Sync from <em>origin</em> to <em>weblate</em>: using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">weblate.push.translations</span></code></dt><dd><p>For each commit on the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of SearXNG-SE <em>origin</em> the GitHub job
-<a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/.github/workflows/integration.yml">babel / Update translations branch</a> checks for updated translations.</p>
+<a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/.github/workflows/integration.yml">babel / Update translations branch</a> checks for updated translations.</p>
 </dd>
-<dt>Sync from <em>weblate</em> to <em>origin</em>: using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">weblate.translations.commit</span></code></dt><dd><p>Every Friday, the GitHub workflow <a class="extlink-origin reference external" href="https://github.com/searxng/searxng/blob/master/.github/workflows/translations-update.yml">babel / create PR for additions from
+<dt>Sync from <em>weblate</em> to <em>origin</em>: using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">weblate.translations.commit</span></code></dt><dd><p>Every Friday, the GitHub workflow <a class="extlink-origin reference external" href="https://github.com/AeshEmi1/searxng-se/blob/master/.github/workflows/translations-update.yml">babel / create PR for additions from
 weblate</a> creates a PR with the
 updated translation files:</p>
 <ul class="simple">
@@ -152,13 +152,13 @@ copy this content into <a class="reference external" href="https://docs.weblate.
 
   <h3>Project Links</h3>
   <ul>
-    <li><a href="https://github.com/searxng/searxng/tree/master">Source</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/tree/master">Source</a>
   
-    <li><a href="https://github.com/searxng/searxng/wiki">Wiki</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/wiki">Wiki</a>
   
     <li><a href="https://searx.space">Public instances</a>
   
-    <li><a href="https://github.com/searxng/searxng/issues">Issue Tracker</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/issues">Issue Tracker</a>
   </ul><h3>Navigation</h3>
 <ul>
   <li><a href="../index.html">Overview</a>

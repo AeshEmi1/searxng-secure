@@ -61,7 +61,7 @@
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">searx.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">extract_text</span><span class="p">,</span> <span class="n">eval_xpath</span><span class="p">,</span> <span class="n">eval_xpath_list</span><span class="p">,</span> <span class="n">eval_xpath_getindex</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">searx.locales</span><span class="w"> </span><span class="kn">import</span> <span class="n">language_tag</span><span class="p">,</span> <span class="n">region_tag</span><span class="p">,</span> <span class="n">get_official_locales</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">searx.network</span><span class="w"> </span><span class="kn">import</span> <span class="n">get</span>  <span class="c1"># see https://github.com/searxng/searxng/issues/762</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">searx.network</span><span class="w"> </span><span class="kn">import</span> <span class="n">get</span>  <span class="c1"># see https://github.com/AeshEmi1/searxng-se/issues/762</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">searx.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="n">SearxEngineCaptchaException</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">searx.enginelib.traits</span><span class="w"> </span><span class="kn">import</span> <span class="n">EngineTraits</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">searx.result_types</span><span class="w"> </span><span class="kn">import</span> <span class="n">EngineResults</span>
@@ -209,7 +209,7 @@
     <span class="c1"># The Interface Language:</span>
     <span class="c1">#   https://developers.google.com/custom-search/docs/xml_results_appendices#interfaceLanguages</span>
 
-    <span class="c1"># https://github.com/searxng/searxng/issues/2515#issuecomment-1607150817</span>
+    <span class="c1"># https://github.com/AeshEmi1/searxng-se/issues/2515#issuecomment-1607150817</span>
     <span class="n">ret_val</span><span class="p">[</span><span class="s1">&#39;params&#39;</span><span class="p">][</span><span class="s1">&#39;hl&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">lang_code</span><span class="si">}</span><span class="s1">-</span><span class="si">{</span><span class="n">country</span><span class="si">}</span><span class="s1">&#39;</span>
 
     <span class="c1"># lr parameter:</span>
@@ -236,7 +236,7 @@
     <span class="c1">#   https://developers.google.com/custom-search/docs/xml_results#crsp</span>
 
     <span class="c1"># specify a region (country) only if a region is given in the selected</span>
-    <span class="c1"># locale --&gt; https://github.com/searxng/searxng/issues/2672</span>
+    <span class="c1"># locale --&gt; https://github.com/AeshEmi1/searxng-se/issues/2672</span>
     <span class="n">ret_val</span><span class="p">[</span><span class="s1">&#39;params&#39;</span><span class="p">][</span><span class="s1">&#39;cr&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sxng_locale</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">ret_val</span><span class="p">[</span><span class="s1">&#39;params&#39;</span><span class="p">][</span><span class="s1">&#39;cr&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;country&#39;</span> <span class="o">+</span> <span class="n">country</span>
@@ -252,7 +252,7 @@
     <span class="c1">#   countries other than the United States.</span>
     <span class="c1">#   https://developers.google.com/custom-search/docs/xml_results#glsp</span>
 
-    <span class="c1"># https://github.com/searxng/searxng/issues/2515#issuecomment-1606294635</span>
+    <span class="c1"># https://github.com/AeshEmi1/searxng-se/issues/2515#issuecomment-1606294635</span>
     <span class="c1"># ret_val[&#39;params&#39;][&#39;gl&#39;] = country</span>
 
     <span class="c1"># ie parameter:</span>
@@ -284,8 +284,8 @@
 
     <span class="c1"># Cookies</span>
 
-    <span class="c1"># - https://github.com/searxng/searxng/pull/1679#issuecomment-1235432746</span>
-    <span class="c1"># - https://github.com/searxng/searxng/issues/1555</span>
+    <span class="c1"># - https://github.com/AeshEmi1/searxng-se/pull/1679#issuecomment-1235432746</span>
+    <span class="c1"># - https://github.com/AeshEmi1/searxng-se/issues/1555</span>
     <span class="n">ret_val</span><span class="p">[</span><span class="s1">&#39;cookies&#39;</span><span class="p">][</span><span class="s1">&#39;CONSENT&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;YES+&quot;</span>
 
     <span class="k">return</span> <span class="n">ret_val</span></div>
@@ -576,13 +576,13 @@
 
   <h3>Project Links</h3>
   <ul>
-    <li><a href="https://github.com/searxng/searxng/tree/master">Source</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/tree/master">Source</a>
   
-    <li><a href="https://github.com/searxng/searxng/wiki">Wiki</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/wiki">Wiki</a>
   
     <li><a href="https://searx.space">Public instances</a>
   
-    <li><a href="https://github.com/searxng/searxng/issues">Issue Tracker</a>
+    <li><a href="https://github.com/AeshEmi1/searxng-se/issues">Issue Tracker</a>
   </ul><h3>Navigation</h3>
 <ul>
   <li><a href="../../../index.html">Overview</a>
