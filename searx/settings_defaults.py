@@ -138,19 +138,17 @@ def apply_schema(settings, schema, path_list):
 SCHEMA = {
     'general': {
         'debug': SettingsValue(bool, False, 'SEARXNG_DEBUG'),
-        'instance_name': SettingsValue(str, 'SearXNG'),
+        'instance_name': SettingsValue(str, 'SearXNG-SE'),
         'privacypolicy_url': SettingsValue((None, False, str), None),
         'contact_url': SettingsValue((None, False, str), None),
-        'donation_url': SettingsValue((bool, str), "https://docs.searxng.org/donate.html"),
         'enable_metrics': SettingsValue(bool, True),
         'open_metrics': SettingsValue(str, ''),
     },
     'brand': {
-        'issue_url': SettingsValue(str, 'https://github.com/searxng/searxng/issues'),
-        'new_issue_url': SettingsValue(str, 'https://github.com/searxng/searxng/issues/new'),
+        'issue_url': SettingsValue(str, 'https://github.com/AeshEmi1/searxng-se/issues'),
+        'new_issue_url': SettingsValue(str, 'https://github.com/AeshEmi1/searxng-se/issues/new'),
         'docs_url': SettingsValue(str, 'https://docs.searxng.org'),
-        'public_instances': SettingsValue((False, str), 'https://searx.space'),
-        'wiki_url': SettingsValue(str, 'https://github.com/searxng/searxng/wiki'),
+        'wiki_url': SettingsValue(str, 'https://github.com/AeshEmi1/searxng-se/wiki'),
         'custom': SettingsValue(dict, {'links': {}}),
     },
     'search': {

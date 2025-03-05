@@ -55,12 +55,6 @@ SearXNG یک انشعاب از [searx] [موتور فراجستجو] معروف 
 SearXNG از نگرانی شما در مورد گزارش‌ها قدردانی می‌کند، بنابراین کد را از
 [کد منبع SearXNG] دریافت کنید و خودتان آن را اجرا کنید!
 
-نمونه خود را به این [لیست عمومی اضافه کنید
-instances]({{get_setting('brand.public_instances')}}) برای کمک به افراد دیگر
-حفظ حریم خصوصی و آزادتر کردن اینترنت. هر چه اینترنت غیرمتمرکزتر باشد
-، آزادی بیشتر است!
-
-
 [کد منبع SearXNG]: {{GIT_URL}}
 [#searxng:matrix.org]: https://matrix.to/#/#searxng:matrix.org
 [اسناد SearXNG]: {{get_setting('brand.docs_url')}}

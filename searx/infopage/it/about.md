@@ -65,11 +65,6 @@ utilizzo dei motori utilizzati.
 SearXNG apprezza la vostra preoccupazione per i log, quindi prendete il codice
 dal file [sorgenti di SearXNG] ed eseguitelo voi stessi!
 
-Aggiungete la vostra istanza a questo [elenco di istanze
-pubbliche]({{get_setting('brand.public_instances')}}) per aiutare altre persone
-a reclamare la propria privacy e a rendere Internet più libero.  Più internet è
-decentralizzato più libertà abbiamo!
-
 
 [sorgenti di SearXNG]: {{GIT_URL}}
 [#searxng:matrix.org]: https://matrix.to/#/#searxng:matrix.org

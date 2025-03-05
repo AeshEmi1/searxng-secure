@@ -60,12 +60,6 @@ statistics about the engines used.
 SearXNG appreciates your concern regarding logs, so take the code from the
 [SearXNG sources] and run it yourself!
 
-Add your instance to this [list of public
-instances]({{get_setting('brand.public_instances')}}) to help other people
-reclaim their privacy and make the internet freer.  The more decentralized the
-internet is, the more freedom we have!
-
-
 [SearXNG sources]: {{GIT_URL}}
 [#searxng:matrix.org]: https://matrix.to/#/#searxng:matrix.org
 [SearXNG docs]: {{get_setting('brand.docs_url')}}

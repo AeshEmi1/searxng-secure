@@ -68,12 +68,6 @@ Instanz einrichten; die Software dazu kann über die [SearXNG Quellen] bezogen
 werden. Weitere Informationen zur Installation und zum Betrieb finden sich in
 der [SearXNG Dokumentation].
 
-Fügen Sie Ihre Instanz zu der [Liste der öffentlich zugänglichen
-Instanzen]({{get_setting('brand.public_instances')}}) hinzu um auch anderen
-Menschen zu helfen ihre Privatsphäre zurückzugewinnen und das Internet freier zu
-machen.  Je dezentraler das Internet ist, desto mehr Freiheit haben wir!
-
-
 [SearXNG Quellen]: {{GIT_URL}}
 [#searxng:matrix.org]: https://matrix.to/#/#searxng:matrix.org
 [SearXNG Dokumentation]: {{get_setting('brand.docs_url')}}

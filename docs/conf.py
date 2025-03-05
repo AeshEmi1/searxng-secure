@@ -16,7 +16,6 @@ release, version = VERSION_STRING, VERSION_STRING
 SEARXNG_URL = get_setting('server.base_url') or 'https://example.org/searxng'
 ISSUE_URL = get_setting('brand.issue_url')
 DOCS_URL = get_setting('brand.docs_url')
-PUBLIC_INSTANCES = get_setting('brand.public_instances')
 PRIVACYPOLICY_URL = get_setting('general.privacypolicy_url')
 CONTACT_URL = get_setting('general.contact_url')
 WIKI_URL = get_setting('brand.wiki_url')
@@ -178,8 +177,6 @@ html_context["project_links"].append(ProjectLink("Source", GIT_URL + '/tree/' + 
 
 if WIKI_URL:
     html_context["project_links"].append(ProjectLink("Wiki", WIKI_URL))
-if PUBLIC_INSTANCES:
-    html_context["project_links"].append(ProjectLink("Public instances", PUBLIC_INSTANCES))
 if ISSUE_URL:
     html_context["project_links"].append(ProjectLink("Issue Tracker", ISSUE_URL))
 if PRIVACYPOLICY_URL:

@@ -63,12 +63,6 @@ berguna tentang mesin pencarian yang digunakan.
 SearXNG menghargai kekhawatiran Anda tentang pencatatan (*log*), jadi ambil
 kodenya dari [sumber SearXNG] dan jalankan sendiri!
 
-Tambahkan instansi Anda ke [daftar instansi
-publik]({{get_setting('brand.public_instances')}}) ini untuk membantu orang lain
-mendapatkan kembali privasi mereka dan membuat internet lebih bebas.  Lebih
-terdesentralisasinya internet, lebih banyak kebebasan yang kita punya!
-
-
 [sumber SearXNG]: {{GIT_URL}}
 [#searxng:matrix.org]: https://matrix.to/#/#searxng:matrix.org
 [dokumentasi SearXNG]: {{get_setting('brand.docs_url')}}

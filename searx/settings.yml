@@ -2,7 +2,7 @@ general:
   # Debug mode, only for development. Is overwritten by ${SEARXNG_DEBUG}
   debug: false
   # displayed name
-  instance_name: "SearXNG"
+  instance_name: "SearXNG-SE"
   # For example: https://example.com/privacy
   privacypolicy_url: false
   # use true to use your own donation page written in searx/info/en/donate.md
@@ -18,11 +18,10 @@ general:
   open_metrics: ''
 
 brand:
-  new_issue_url: https://github.com/searxng/searxng/issues/new
+  new_issue_url: https://github.com/AeshEmi1/searxng-se/issues/new
   docs_url: https://docs.searxng.org/
-  public_instances: https://searx.space
-  wiki_url: https://github.com/searxng/searxng/wiki
-  issue_url: https://github.com/searxng/searxng/issues
+  wiki_url: https://github.com/AeshEmi1/searxng-se/wiki
+  issue_url: https://github.com/AeshEmi1/searxng-se/issues
   # custom:
   #   maintainer: "Jon Doe"
   #   # Custom entries in the footer: [title]: [link]
@@ -1503,7 +1502,7 @@ engines:
       # Proxies from public instances.  Ask the public instances owners if they
       # agree to receive traffic from SearXNG!
       #    --> https://codeberg.org/VnPower/PixivFE#instances
-      #    --> https://github.com/searxng/searxng/pull/3192#issuecomment-1941095047
+      #    --> https://github.com/AeshEmi1/searxng-se/pull/3192#issuecomment-1941095047
       # image proxy of https://pixiv.cat
       # - https://i.pixiv.cat
       # image proxy of https://www.pixiv.pics
@@ -2299,7 +2298,7 @@ engines:
     search_type: text
     base_url:
       - https://yacy.searchlab.eu
-      # see https://github.com/searxng/searxng/pull/3631#issuecomment-2240903027
+      # see https://github.com/AeshEmi1/searxng-se/pull/3631#issuecomment-2240903027
       # - https://search.kyun.li
       # - https://yacy.securecomcorp.eu
       # - https://yacy.myserv.ca

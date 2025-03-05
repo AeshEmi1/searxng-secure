@@ -69,11 +69,6 @@ SearXNG apprécie votre préoccupation concernant les traces de recherche.
 N'hésitez pas à utiliser le [dépôt de sources] et à maintenir votre
 propre instance de recherche.
 
-Ajouter votre instance à la [liste d'instances
-publiques]({{get_setting('brand.public_instances')}}) afin d'aider
-d'autres personnes à protéger leur vie privée et rendre l'Internet plus
-libre. Plus Internet sera décentralisé, plus nous aurons de liberté !
-
 [dépôt de sources]: {{GIT_URL}}
 [#searxng:matrix.org]: https://matrix.to/#/#searxng:matrix.org
 [projet SearXNG]: {{get_setting('brand.docs_url')}}
