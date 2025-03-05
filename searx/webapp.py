@@ -1373,7 +1373,6 @@ def run():
     )
 
 
-
 application = app
 patch_application(app)
 
