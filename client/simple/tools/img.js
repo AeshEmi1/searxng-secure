@@ -75,4 +75,29 @@ async function svg2svg(svgo_opts, items) {
 }
 
 
-export { svg2png, svg2svg };
+async function png2png(items) {
+  items.forEach(
+    async (item) => {
+      try {
+        fs.mkdir(path.dirname(item.dest), { recursive: true }, (err) => {
+          if (err) throw err;
+        });
+
+        const info = await sharp(item.src).png({
+          quality: quality,
+          compressionLevel: 9,
+          adaptiveFiltering: true,
+        }).toFile(item.dest);
+
+        console.log(
+          `[png2png] created ${item.dest} -- bytes: ${info.size}, w:${info.width}px, h:${info.height}px`
+        );
+      } catch (err) {
+        console.error(`ERROR: ${item.dest} -- ${err}`);
+        throw(err);
+      }
+    }
+  );
+}
+
+export { svg2png, svg2svg, png2png };

@@ -8,6 +8,7 @@ import stylelint from "vite-plugin-stylelint";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import { plg_svg2png } from "./tools/plg.js";
 import { plg_svg2svg } from "./tools/plg.js";
+import { plg_png2png } from "./tools/plg.js";
 
 
 const ROOT = "../..";  // root of the git reposetory
@@ -153,14 +154,19 @@ export default defineConfig({
     plg_svg2png(
       [
         { src: PATH.brand + "/searxng-se-wordmark.svg", dest: PATH.dist + "/img/favicon.png" },
-        { src: PATH.brand + "/searxng-se.png", dest: PATH.dist + "/img/searxng.png" },
+      ],
+    ),
+
+    plg_png2png(
+      [
+        { src: PATH.brand + "/searxng-se.png", dest: PATH.dist + "/img/searxng-se.png" },
       ],
     ),
 
     // -- svg
     plg_svg2svg(
       [
-        { src: PATH.brand + "/searxng-se.png", dest: PATH.dist + "/img/searxng-se.png" },
+        { src: PATH.brand + "/searxng-se.svg", dest: PATH.dist + "/img/searxng-se.svg" },
         { src: PATH.brand + "/img_load_error.svg", dest: PATH.dist + "/img/img_load_error.svg" },
       ],
       svg2svg_opts,
@@ -175,7 +181,7 @@ export default defineConfig({
     // -- simple templates
     plg_svg2svg(
       [
-        { src: PATH.brand + "/searxng-se-wordmark.svg", dest: PATH.templates + "/searxng-wordmark.min.svg" },
+        { src: PATH.brand + "/searxng-se-wordmark.svg", dest: PATH.templates + "/searxng-se-wordmark.min.svg" },
       ],
       svg2svg_opts
     ),

@@ -10,6 +10,7 @@
 
 import { svg2png } from "./img.js";
 import { svg2svg } from "./img.js";
+import { png2png } from "./img.js";
 
 /**
  * Vite plugin to convert a list of SVG files to PNG.
@@ -38,4 +39,18 @@ function plg_svg2svg(svgo_opts, items) {
   };
 }
 
-export { plg_svg2png, plg_svg2svg };
+/**
+ * Vite plugin to optimize PNG images for WEB.
+ *
+ * @param {import('svgo').Config} svgo_opts - Options passed to svgo.
+ * @param {import('./img.js').Src2Dest} items - Array of SVG files (src:SVG, dest:SVG) to optimize.
+ */
+function plg_png2png(items) {
+  return {
+    name: 'searxng-simple-png2png',
+    apply: 'build',  // Can be 'build' or 'serve'
+    async writeBundle() { png2png(items); },
+  };
+}
+
+export { plg_svg2png, plg_svg2svg, plg_png2png };
