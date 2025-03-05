@@ -5,8 +5,8 @@ Docker Container
 ================
 
 .. _ENTRYPOINT: https://docs.docker.com/engine/reference/builder/#entrypoint
-.. _searxng/searxng @dockerhub: https://hub.docker.com/r/searxng/searxng
-.. _searxng-docker: https://github.com/searxng/searxng-docker
+.. _searxng/searxng @dockerhub: https://hub.docker.com/r/aeshemi1/searxng-se
+.. _searxng-se-docker: https://github.com/AeshEmi/searxng-se-docker
 .. _[caddy]: https://hub.docker.com/_/caddy
 .. _Redis: https://redis.io/
 
@@ -33,12 +33,12 @@ docker container**
    The rest of this article is of interest only to those who want to create and
    maintain their own Docker images.
 
-The sources are hosted at searxng-docker_ and the container includes:
+The sources are hosted at searxng-se-docker_ and the container includes:
 
 - a HTTPS reverse proxy `[caddy]`_ and
 - a Redis_ DB
 
-The `default SearXNG-SE setup <https://github.com/searxng/searxng-docker/blob/master/searxng/settings.yml>`_
+The `default SearXNG-SE setup <https://github.com/AeshEmi1/searxng-se-docker/blob/master/searxng/settings.yml>`_
 of this container:
 
 - enables :ref:`limiter <limiter>` to protect against bots
@@ -74,8 +74,8 @@ searxng/searxng
      mount volume ``HOST:CONTAINER``
 
 The docker image is based on :origin:`Dockerfile` and available from
-`searxng/searxng @dockerhub`_.  Using the docker image is quite easy, for
-instance you can pull the `searxng/searxng @dockerhub`_ image and deploy a local
+`AeshEmi1/searxng-se @dockerhub`_.  Using the docker image is quite easy, for
+instance you can pull the `AeshEmi1/searxng-se @dockerhub`_ image and deploy a local
 instance using `docker run <https://docs.docker.com/engine/reference/run/>`_:
 
 .. code:: sh

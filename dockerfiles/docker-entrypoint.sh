@@ -164,7 +164,7 @@ if [ "$SEARX_CONF" -eq "1" ]; then
     cat << EOF > /etc/searx/deprecated_volume_read_me.txt
 This Docker image uses the volume /etc/searxng
 Update your configuration:
-* remove uwsgi.ini (or very carefully update your existing uwsgi.ini using https://github.com/searxng/searxng/blob/master/dockerfiles/uwsgi.ini )
+* remove uwsgi.ini (or very carefully update your existing uwsgi.ini using https://github.com/AeshEmi1/searxng-se/blob/master/dockerfiles/uwsgi.ini )
 * mount /etc/searxng instead of /etc/searx
 EOF
 fi
