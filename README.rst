@@ -13,7 +13,7 @@
 
 An actual privacy-respecting, hackable `metasearch engine`_
 
-It is NOT advised to use public SearXNG or SearXNG-SE instances. It is impossible to know if they are collecting logs, inspecting your web searches in cleartext, or selling your data.
+It is NOT advised to use public SearXNG or SearXNG-SE instances. It is impossible to know if they are collecting logs, inspecting your web searches, or selling your data.
 
 A user_, admin_ and developer_ handbook is available on the homepage_.
 
