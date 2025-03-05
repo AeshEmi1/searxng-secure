@@ -152,15 +152,15 @@ export default defineConfig({
 
     plg_svg2png(
       [
-        { src: PATH.brand + "/searxng-wordmark.svg", dest: PATH.dist + "/img/favicon.png" },
-        { src: PATH.brand + "/searxng.svg", dest: PATH.dist + "/img/searxng.png" },
+        { src: PATH.brand + "/searxng-se-wordmark.svg", dest: PATH.dist + "/img/favicon.png" },
+        { src: PATH.brand + "/searxng-se.png", dest: PATH.dist + "/img/searxng.png" },
       ],
     ),
 
     // -- svg
     plg_svg2svg(
       [
-        { src: PATH.brand + "/searxng.svg", dest: PATH.dist + "/img/searxng.svg" },
+        { src: PATH.brand + "/searxng-se.png", dest: PATH.dist + "/img/searxng-se.png" },
         { src: PATH.brand + "/img_load_error.svg", dest: PATH.dist + "/img/img_load_error.svg" },
       ],
       svg2svg_opts,
@@ -168,14 +168,14 @@ export default defineConfig({
 
     // -- favicon
     plg_svg2svg(
-      [ { src: PATH.brand + "/searxng-wordmark.svg", dest: PATH.dist + "/img/favicon.svg" } ],
+      [ { src: PATH.brand + "/searxng-se-wordmark.svg", dest: PATH.dist + "/img/favicon.svg" } ],
       svg2svg_favicon_opts,
     ),
 
     // -- simple templates
     plg_svg2svg(
       [
-        { src: PATH.brand + "/searxng-wordmark.svg", dest: PATH.templates + "/searxng-wordmark.min.svg" },
+        { src: PATH.brand + "/searxng-se-wordmark.svg", dest: PATH.templates + "/searxng-wordmark.min.svg" },
       ],
       svg2svg_opts
     ),
